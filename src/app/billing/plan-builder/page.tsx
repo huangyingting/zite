@@ -10,11 +10,34 @@ export default function PlanBuilderPage() {
   const [annual, setAnnual] = useState(true);
   const [saved, setSaved] = useState(false);
 
+  const [saving, setSaving] = useState(false);
+
   const basePrice = tier === "Starter" ? 20 : tier === "Business" ? 99 : 450;
   const creditAddon = Math.max(0, (credits - 400) * 0.08);
   const monthlyTotal = Math.round(
     (basePrice + creditAddon) * (annual ? 0.85 : 1)
   );
+
+  async function handleSavePlan() {
+    setSaving(true);
+    try {
+      const res = await fetch("/api/workspaces", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "update_plan",
+          tier,
+          credits,
+          annual,
+        }),
+      });
+      if (res.ok) {
+        setSaved(true);
+      }
+    } finally {
+      setSaving(false);
+    }
+  }
 
   return (
     <StudioShell>
@@ -100,11 +123,12 @@ export default function PlanBuilderPage() {
 
           <button
             type="button"
+            disabled={saving}
             data-testid="save-plan-btn"
-            onClick={() => setSaved(true)}
-            className="w-full py-2.5 rounded-lg bg-[#141413] text-[#FAF9F5] text-xs font-semibold"
+            onClick={handleSavePlan}
+            className="w-full py-2.5 rounded-lg bg-[#141413] text-[#FAF9F5] text-xs font-semibold disabled:opacity-50"
           >
-            Update Workspace Subscription Plan
+            {saving ? "Updating Subscription Plan..." : "Update Workspace Subscription Plan"}
           </button>
 
           {saved && (

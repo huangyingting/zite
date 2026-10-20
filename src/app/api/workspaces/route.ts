@@ -10,7 +10,7 @@ export async function GET() {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const workspaces = await prisma.workspace.findMany({
+  const rawWorkspaces = await prisma.workspace.findMany({
     orderBy: { createdAt: "asc" },
     include: {
       tables: {
@@ -26,6 +26,20 @@ export async function GET() {
       integrations: true,
     },
   });
+
+  const workspaces = rawWorkspaces.map((ws) => ({
+    ...ws,
+    slug: ws.publicId,
+    tables: ws.tables.map((t) => ({
+      ...t,
+      slug: t.sdkName,
+      icon: "📋",
+    })),
+    apps: ws.apps.map((app) => ({
+      ...app,
+      publishedUrl: `https://zite-demo-${app.publicId}.zite.so`,
+    })),
+  }));
 
   return NextResponse.json({ workspaces, user });
 }
@@ -43,7 +57,12 @@ export async function POST(request: Request) {
   }
 
   const body = (await request.json()) as {
-    action?: "create_workspace" | "create_app_from_prompt" | "clone_template" | "migrate_import";
+    action?:
+      | "create_workspace"
+      | "create_app_from_prompt"
+      | "clone_template"
+      | "migrate_import"
+      | "update_plan";
     name?: string;
     description?: string;
     prompt?: string;
@@ -53,7 +72,43 @@ export async function POST(request: Request) {
     templateSlug?: string;
     sourceTool?: string;
     csvData?: string;
+    tier?: "Starter" | "Business" | "Enterprise";
+    credits?: number;
+    annual?: boolean;
   };
+
+  if (body.action === "update_plan") {
+    const newCreditLimit = Math.max(200, Number(body.credits || 800));
+    const updatedUser = await prisma.user.update({
+      where: { id: user.id },
+      data: { aiCreditLimit: newCreditLimit },
+    });
+
+    await recordAuditLog({
+      eventType: "user.creditLimitChange",
+      category: "org",
+      securityCritical: true,
+      actorUserId: user.id,
+      actorEmail: user.email,
+      targetType: "user",
+      targetId: user.id,
+      targetName: user.email,
+      payload: {
+        tier: body.tier || "Business",
+        annual: Boolean(body.annual),
+        from: user.aiCreditLimit,
+        to: newCreditLimit,
+      },
+    });
+
+    return NextResponse.json({
+      ok: true,
+      tier: body.tier || "Business",
+      credits: newCreditLimit,
+      annual: Boolean(body.annual),
+      user: updatedUser,
+    });
+  }
 
   // Clone template from Marketplace
   if (body.action === "clone_template" && body.templateSlug) {

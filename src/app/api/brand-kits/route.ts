@@ -1,12 +1,18 @@
 import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { recordAuditLog } from "@/lib/audit";
 
 export async function GET() {
   const brandKits = await prisma.brandKit.findMany({
     orderBy: { updatedAt: "desc" },
   });
-  return NextResponse.json({ brandKits });
+  const kits = brandKits.map((k, idx) => ({
+    ...k,
+    sourceUrl: k.sourceWebsiteUrl,
+    isDefault: idx === 0,
+  }));
+  return NextResponse.json({ brandKits: kits, kits });
 }
 
 export async function POST(request: Request) {
@@ -26,6 +32,7 @@ export async function POST(request: Request) {
     workspaceId?: string;
     action?: "save" | "extract_from_url";
     websiteUrl?: string;
+    sourceUrl?: string;
     name?: string;
     logoText?: string;
     primaryColor?: string;
@@ -38,42 +45,71 @@ export async function POST(request: Request) {
     toneOfVoice?: string;
   };
 
-  if (body.action === "extract_from_url" && body.websiteUrl) {
-    const url = body.websiteUrl.trim().toLowerCase();
+  const targetWs =
+    (body.workspaceId
+      ? await prisma.workspace.findFirst({
+          where: {
+            OR: [{ id: body.workspaceId }, { publicId: body.workspaceId }],
+          },
+        })
+      : null) || (await prisma.workspace.findFirst());
+
+  if (!targetWs) {
+    return NextResponse.json({ error: "Workspace not found" }, { status: 404 });
+  }
+
+  const rawUrl = body.websiteUrl || body.sourceUrl;
+
+  if ((body.action === "extract_from_url" || rawUrl) && rawUrl && !body.id) {
+    const url = rawUrl.trim().toLowerCase();
     const isStripe = url.includes("stripe");
     const isLinear = url.includes("linear");
     const extracted = {
-      name: isStripe
-        ? "Stripe FinTech Palette"
-        : isLinear
-        ? "Linear Precision Dark"
-        : `Brand Kit (${url.replace(/^https?:\/\//, "").split("/")[0]})`,
-      primaryColor: isStripe ? "#635BFF" : isLinear ? "#5E6AD2" : "#0F766E",
-      accentColor: isStripe ? "#00D4B6" : isLinear ? "#26B5CE" : "#2563EB",
-      backgroundColor: "#FAF9F5",
-      textColor: "#141413",
-      headingFont: "Georgia",
-      bodyFont: "Inter",
-      borderRadius: "10px",
-      toneOfVoice: `Extracted from ${body.websiteUrl} — Crisp, modern, high-trust product voice`,
-      sourceWebsiteUrl: body.websiteUrl,
+      name:
+        body.name ||
+        (isStripe
+          ? "Stripe FinTech Palette"
+          : isLinear
+          ? "Linear Precision Dark"
+          : `Brand Kit (${url.replace(/^https?:\/\//, "").split("/")[0]})`),
+      primaryColor:
+        body.primaryColor || (isStripe ? "#635BFF" : isLinear ? "#5E6AD2" : "#0F766E"),
+      accentColor:
+        body.accentColor || (isStripe ? "#00D4B6" : isLinear ? "#26B5CE" : "#2563EB"),
+      backgroundColor: body.backgroundColor || "#FAF9F5",
+      textColor: body.textColor || "#141413",
+      headingFont: body.headingFont || "Georgia",
+      bodyFont: body.bodyFont || "Inter",
+      borderRadius: body.borderRadius || "10px",
+      toneOfVoice:
+        body.toneOfVoice ||
+        `Extracted from ${rawUrl} — Crisp, modern, high-trust product voice`,
+      sourceWebsiteUrl: rawUrl,
     };
 
-    if (body.id) {
-      const kit = await prisma.brandKit.update({
-        where: { id: body.id },
-        data: extracted,
-      });
-      return NextResponse.json({ brandKit: kit, extracted: true });
-    }
-    const ws = await prisma.workspace.findFirst();
     const kit = await prisma.brandKit.create({
       data: {
-        workspaceId: body.workspaceId || ws!.id,
+        workspaceId: targetWs.id,
         ...extracted,
       },
     });
-    return NextResponse.json({ brandKit: kit, extracted: true }, { status: 201 });
+
+    await recordAuditLog({
+      eventType: "brandKit.extract",
+      category: "app",
+      actorUserId: user.id,
+      actorEmail: user.email,
+      targetType: "brandKit",
+      targetId: kit.id,
+      targetName: kit.name,
+      payload: { sourceUrl: rawUrl, primaryColor: kit.primaryColor },
+    });
+
+    const normalized = { ...kit, sourceUrl: kit.sourceWebsiteUrl, isDefault: true };
+    return NextResponse.json(
+      { brandKit: normalized, kit: normalized, extracted: true },
+      { status: 201 }
+    );
   }
 
   if (body.id) {
@@ -92,17 +128,22 @@ export async function POST(request: Request) {
         ...(body.toneOfVoice ? { toneOfVoice: body.toneOfVoice } : {}),
       },
     });
-    return NextResponse.json({ brandKit: kit });
+    const normalized = { ...kit, sourceUrl: kit.sourceWebsiteUrl };
+    return NextResponse.json({ brandKit: normalized, kit: normalized });
   }
 
-  const ws = await prisma.workspace.findFirst();
   const kit = await prisma.brandKit.create({
     data: {
-      workspaceId: body.workspaceId || ws!.id,
+      workspaceId: targetWs.id,
       name: body.name || "Custom Brand Kit",
       primaryColor: body.primaryColor || "#2563EB",
       accentColor: body.accentColor || "#059669",
+      backgroundColor: body.backgroundColor || "#FAF9F5",
+      headingFont: body.headingFont || "Georgia",
+      bodyFont: body.bodyFont || "Inter",
+      borderRadius: body.borderRadius || "10px",
     },
   });
-  return NextResponse.json({ brandKit: kit }, { status: 201 });
+  const normalized = { ...kit, sourceUrl: kit.sourceWebsiteUrl, isDefault: true };
+  return NextResponse.json({ brandKit: normalized, kit: normalized }, { status: 201 });
 }

@@ -1,12 +1,30 @@
 import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { recordAuditLog } from "@/lib/audit";
 
 export async function GET() {
   const integrations = await prisma.workspaceIntegration.findMany({
     orderBy: { createdAt: "asc" },
   });
-  return NextResponse.json({ integrations });
+
+  const connections = integrations
+    .filter((i) => i.category !== "Secret" && !i.providerId.startsWith("secret:"))
+    .map((i) => ({
+      ...i,
+      providerSlug: i.providerId,
+    }));
+
+  const secrets = integrations
+    .filter((i) => i.category === "Secret" || i.providerId.startsWith("secret:") || Boolean(i.secretMasked))
+    .map((i) => ({
+      id: i.id,
+      name: i.providerId.startsWith("secret:") ? i.name : `${i.providerId.toUpperCase().replace(/[^A-Z0-9]/g, "_")}_SECRET`,
+      maskedPreview: i.secretMasked || "zite_sec_••••••••••••",
+      updatedAt: i.updatedAt,
+    }));
+
+  return NextResponse.json({ integrations, connections, secrets });
 }
 
 export async function POST(request: Request) {
@@ -22,20 +40,82 @@ export async function POST(request: Request) {
   }
 
   const body = (await request.json()) as {
-    providerId: string;
-    name: string;
+    action?: "upsertSecret" | "toggleConnection";
+    workspaceId?: string;
+    providerId?: string;
+    name?: string;
+    value?: string;
     category?: string;
     secretValue?: string;
     status?: "CONNECTED" | "DISCONNECTED";
   };
 
-  const ws = await prisma.workspace.findFirst();
+  const ws =
+    (body.workspaceId
+      ? await prisma.workspace.findFirst({
+          where: {
+            OR: [{ id: body.workspaceId }, { publicId: body.workspaceId }],
+          },
+        })
+      : null) || (await prisma.workspace.findFirst());
   if (!ws) {
     return NextResponse.json({ error: "Workspace not found" }, { status: 404 });
   }
 
+  if (body.action === "upsertSecret" && body.name) {
+    const cleanName = body.name.trim().toUpperCase().replace(/[^A-Z0-9_]/g, "_");
+    const rawVal = body.value || body.secretValue || "sec_val";
+    const masked = `${rawVal.slice(0, 4)}••••••••••••`;
+    const providerKey = `secret:${cleanName}`;
+
+    const existingSecret = await prisma.workspaceIntegration.findFirst({
+      where: { workspaceId: ws.id, providerId: providerKey },
+    });
+
+    const saved = existingSecret
+      ? await prisma.workspaceIntegration.update({
+          where: { id: existingSecret.id },
+          data: { name: cleanName, secretMasked: masked, status: "CONNECTED" },
+        })
+      : await prisma.workspaceIntegration.create({
+          data: {
+            workspaceId: ws.id,
+            providerId: providerKey,
+            name: cleanName,
+            category: "Secret",
+            status: "CONNECTED",
+            secretMasked: masked,
+          },
+        });
+
+    await recordAuditLog({
+      eventType: "secret.upsert",
+      category: "org",
+      securityCritical: true,
+      actorUserId: user.id,
+      actorEmail: user.email,
+      targetType: "secret",
+      targetId: saved.id,
+      targetName: cleanName,
+      payload: { workspaceId: ws.publicId, secretName: cleanName },
+    });
+
+    return NextResponse.json(
+      {
+        secret: {
+          id: saved.id,
+          name: saved.name,
+          maskedPreview: saved.secretMasked || masked,
+        },
+        integration: saved,
+      },
+      { status: 201 }
+    );
+  }
+
+  const providerId = body.providerId || (body.name || "custom").toLowerCase().replace(/[^a-z0-9-]+/g, "-");
   const existing = await prisma.workspaceIntegration.findFirst({
-    where: { workspaceId: ws.id, providerId: body.providerId },
+    where: { workspaceId: ws.id, providerId },
   });
 
   const masked = body.secretValue
@@ -43,26 +123,55 @@ export async function POST(request: Request) {
     : existing?.secretMasked || "zite_sec_••••••••••••";
 
   if (existing) {
+    const nextStatus = body.status || (existing.status === "CONNECTED" ? "DISCONNECTED" : "CONNECTED");
     const updated = await prisma.workspaceIntegration.update({
       where: { id: existing.id },
       data: {
-        status: body.status || "CONNECTED",
+        status: nextStatus,
         secretMasked: masked,
       },
     });
-    return NextResponse.json({ integration: updated });
+
+    await recordAuditLog({
+      eventType: nextStatus === "CONNECTED" ? "integration.connect" : "integration.disconnect",
+      category: "org",
+      actorUserId: user.id,
+      actorEmail: user.email,
+      targetType: "integration",
+      targetId: updated.id,
+      targetName: updated.name,
+      payload: { providerId, status: nextStatus },
+    });
+
+    return NextResponse.json({
+      integration: { ...updated, providerSlug: updated.providerId },
+    });
   }
 
   const created = await prisma.workspaceIntegration.create({
     data: {
       workspaceId: ws.id,
-      providerId: body.providerId,
-      name: body.name,
+      providerId,
+      name: body.name || providerId,
       category: body.category || "Integration",
       status: "CONNECTED",
       secretMasked: masked,
     },
   });
 
-  return NextResponse.json({ integration: created }, { status: 201 });
+  await recordAuditLog({
+    eventType: "integration.connect",
+    category: "org",
+    actorUserId: user.id,
+    actorEmail: user.email,
+    targetType: "integration",
+    targetId: created.id,
+    targetName: created.name,
+    payload: { providerId, status: "CONNECTED" },
+  });
+
+  return NextResponse.json(
+    { integration: { ...created, providerSlug: created.providerId } },
+    { status: 201 }
+  );
 }

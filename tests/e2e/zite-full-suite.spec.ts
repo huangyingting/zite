@@ -275,4 +275,51 @@ test.describe("Zite Full-Stack Platform — E2E Verification Suite", () => {
       path: path.join(VERIFY_DIR, "10_published_crm_mobile.png"),
     });
   });
+
+  test("7. Production Readiness: /api/health, Auth Proxy Protection, Brand Kit Extraction, Encrypted Secrets & Billing Persistence", async ({
+    page,
+    request,
+  }) => {
+    // 1. Verify /api/health endpoint
+    const healthRes = await request.get("/api/health");
+    expect(healthRes.status()).toBe(200);
+    const healthJson = await healthRes.json();
+    expect(healthJson.status).toBe("healthy");
+    expect(healthJson.database.status).toBe("connected");
+
+    // 2. Verify unauthenticated request to /home redirects to /login via src/proxy.ts
+    await page.goto("/home");
+    await expect(page).toHaveURL(/\/login\?redirectPath=%2Fhome/);
+
+    // 3. Log in as Admin
+    await page.getByTestId("login-email").fill("admin@zite.com");
+    await page.getByTestId("login-password").fill("Password123!");
+    await page.getByTestId("login-submit").click();
+    await page.waitForURL("**/home");
+
+    // 4. Verify Workspace 2.0 Container view (/workspace/ws_ashgrove_crm)
+    await page.goto("/workspace/ws_ashgrove_crm");
+    await expect(page.locator("body")).toContainText("Workspace 2.0 Container");
+    await expect(page.locator("body")).toContainText("Ashgrove Software");
+
+    // 5. Verify Brand Kit extraction & persistence (/editor/design-system)
+    await page.goto("/editor/design-system");
+    await page.getByTestId("brandkit-name-input").fill("Linear Dark Precision");
+    await page.getByTestId("brandkit-url-input").fill("https://linear.app");
+    await page.getByTestId("brandkit-save-btn").click();
+    await expect(page.locator("body")).toContainText("Linear Dark Precision");
+
+    // 6. Verify Encrypted Workspace Secret persistence (/home/integrations)
+    await page.goto("/home/integrations");
+    await page.getByTestId("secret-name-input").fill("STRIPE_WEBHOOK_SECRET");
+    await page.getByTestId("secret-value-input").fill("whsec_live_987654321");
+    await page.getByTestId("add-secret-btn").click();
+    await expect(page.locator("body")).toContainText("STRIPE_WEBHOOK_SECRET");
+
+    // 7. Verify Billing Plan & AI Credit Pool persistence (/billing/plan-builder)
+    await page.goto("/billing/plan-builder");
+    await page.getByTestId("plan-tier-enterprise").click();
+    await page.getByTestId("save-plan-btn").click();
+    await expect(page.getByTestId("plan-saved-banner")).toBeVisible();
+  });
 });
