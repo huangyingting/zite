@@ -1,0 +1,280 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id                      String               @id @default(cuid())
+  email                   String               @unique
+  name                    String?
+  avatarUrl               String?
+  role                    String               @default("VIEWER")
+  status                  String               @default("ACTIVE")
+  sessionVersion          Int                  @default(1)
+  aiCreditLimit           Int                  @default(400)
+  aiCreditsUsed           Int                  @default(45)
+  createdByAdminBootstrap Boolean              @default(false)
+  invitedById             String?
+  invitedBy               User?                @relation("InvitedUsers", fields: [invitedById], references: [id])
+  invitedUsers            User[]               @relation("InvitedUsers")
+  passwordCredential      PasswordCredential?
+  sentInvitations         AccountInvitation[]  @relation("InvitationSender")
+  acceptedInvitations     AccountInvitation[]  @relation("InvitationAcceptor")
+  ownedWorkspaces         Workspace[]
+  auditLogs               AuditLog[]
+  lastLoginAt             DateTime?
+  revokedAt               DateTime?
+  createdAt               DateTime             @default(now())
+  updatedAt               DateTime             @updatedAt
+}
+
+model PasswordCredential {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  passwordHash      String
+  passwordUpdatedAt DateTime @default(now())
+}
+
+model AccountInvitation {
+  id               String    @id @default(cuid())
+  email            String
+  role             String    @default("VIEWER")
+  tokenHash        String    @unique
+  tokenPreview     String    @default("")
+  status           String    @default("PENDING")
+  expiresAt        DateTime
+  invitedByUserId  String
+  invitedBy        User      @relation("InvitationSender", fields: [invitedByUserId], references: [id], onDelete: Cascade)
+  acceptedByUserId String?
+  acceptedBy       User?     @relation("InvitationAcceptor", fields: [acceptedByUserId], references: [id], onDelete: SetNull)
+  acceptedAt       DateTime?
+  revokedAt        DateTime?
+  rotatedAt        DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  @@index([email])
+  @@index([status, expiresAt])
+}
+
+model UserGroup {
+  id              String   @id @default(cuid())
+  name            String
+  description     String   @default("")
+  membersJson     String   @default("[]")
+  permissionsJson String   @default("{}")
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model AuditLog {
+  id               String   @id @default(cuid())
+  eventType        String
+  category         String   @default("org")
+  securityCritical Boolean  @default(false)
+  actorUserId      String?
+  actor            User?    @relation(fields: [actorUserId], references: [id], onDelete: SetNull)
+  actorEmail       String?
+  targetType       String?
+  targetId         String?
+  targetName       String?
+  outcome          String   @default("SUCCESS")
+  ipAddress        String?
+  payloadJson      String   @default("{}")
+  createdAt        DateTime @default(now())
+
+  @@index([eventType, createdAt])
+  @@index([category, createdAt])
+}
+
+model Workspace {
+  id           String                 @id @default(cuid())
+  publicId     String                 @unique
+  name         String
+  description  String                 @default("")
+  icon         String                 @default("Briefcase")
+  color        String                 @default("#2563EB")
+  ownerId      String
+  owner        User                   @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  tables       DatabaseTable[]
+  records      DatabaseRecord[]
+  apps         ZiteApp[]
+  workflows    ZiteWorkflow[]
+  brandKits    BrandKit[]
+  integrations WorkspaceIntegration[]
+  createdAt    DateTime               @default(now())
+  updatedAt    DateTime               @updatedAt
+}
+
+model BrandKit {
+  id               String    @id @default(cuid())
+  workspaceId      String
+  workspace        Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  name             String
+  logoText         String    @default("AS")
+  primaryColor     String    @default("#2563EB")
+  accentColor      String    @default("#059669")
+  backgroundColor  String    @default("#FAF9F5")
+  surfaceColor     String    @default("#FFFFFF")
+  textColor        String    @default("#141413")
+  headingFont      String    @default("Georgia")
+  bodyFont         String    @default("Inter")
+  borderRadius     String    @default("8px")
+  toneOfVoice      String    @default("Crisp, operational, and executive-ready")
+  sourceWebsiteUrl String?
+  isDefault        Boolean   @default(true)
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+}
+
+model DatabaseTable {
+  id              String           @id @default(cuid())
+  workspaceId     String
+  workspace       Workspace        @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  name            String
+  sdkName         String
+  icon            String           @default("Table")
+  description     String           @default("")
+  orderIndex      Int              @default(0)
+  fieldsJson      String           @default("[]")
+  viewsJson       String           @default("[]")
+  accessRulesJson String           @default("[]")
+  records         DatabaseRecord[]
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+
+  @@index([workspaceId, orderIndex])
+}
+
+model DatabaseRecord {
+  id             String        @id @default(cuid())
+  tableId        String
+  table          DatabaseTable @relation(fields: [tableId], references: [id], onDelete: Cascade)
+  workspaceId    String
+  workspace      Workspace     @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  valuesJson     String        @default("{}")
+  sourceJson     String        @default("{\"type\":\"manual\"}")
+  createdByEmail String?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  @@index([tableId])
+  @@index([workspaceId])
+}
+
+model ZiteApp {
+  id                 String         @id @default(cuid())
+  publicId           String         @unique
+  slug               String         @unique
+  workspaceId        String
+  workspace          Workspace      @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  name               String
+  description        String         @default("")
+  icon               String         @default("Layout")
+  color              String         @default("#2563EB")
+  templateCategory   String         @default("Sales")
+  status             String         @default("PUBLISHED")
+  accessMode         String         @default("INTERNAL")
+  loginMethodsJson   String         @default("[\"google\",\"microsoft\",\"email_otp\",\"password\",\"sso\"]")
+  accessRulesJson    String         @default("[]")
+  navigationJson     String         @default("[]")
+  styleOverridesJson String         @default("{}")
+  monorepoFilesJson  String         @default("{}")
+  auditReportJson    String         @default("{}")
+  currentVersion     Int            @default(1)
+  publishedAt        DateTime?      @default(now())
+  versions           AppVersion[]
+  chatThreads        AiChatThread[]
+  workflows          ZiteWorkflow[]
+  createdAt          DateTime       @default(now())
+  updatedAt          DateTime       @updatedAt
+}
+
+model AppVersion {
+  id             String   @id @default(cuid())
+  appId          String
+  app            ZiteApp  @relation(fields: [appId], references: [id], onDelete: Cascade)
+  versionNumber  Int
+  label          String
+  summary        String
+  diffSummary    String   @default("")
+  snapshotJson   String   @default("{}")
+  createdByEmail String   @default("dominic@ashgrovesoftware.com")
+  createdAt      DateTime @default(now())
+
+  @@index([appId, versionNumber])
+}
+
+model AiChatThread {
+  id           String   @id @default(cuid())
+  appId        String
+  app          ZiteApp  @relation(fields: [appId], references: [id], onDelete: Cascade)
+  title        String
+  mode         String   @default("auto")
+  modelTier    String   @default("zite-pro")
+  archived     Boolean  @default(false)
+  messagesJson String   @default("[]")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model ZiteWorkflow {
+  id                String        @id @default(cuid())
+  workspaceId       String
+  workspace         Workspace     @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  appId             String?
+  app               ZiteApp?      @relation(fields: [appId], references: [id], onDelete: SetNull)
+  name              String
+  filename          String
+  description       String        @default("")
+  triggerType       String        @default("on_demand")
+  triggerConfigJson String        @default("{}")
+  stepsJson         String        @default("[]")
+  code              String        @default("")
+  enabled           Boolean       @default(true)
+  runs              WorkflowRun[]
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+}
+
+model WorkflowRun {
+  id               String       @id @default(cuid())
+  workflowId       String
+  workflow         ZiteWorkflow @relation(fields: [workflowId], references: [id], onDelete: Cascade)
+  workspaceId      String
+  triggerSource    String       @default("on_demand")
+  status           String       @default("SUCCESS")
+  durationMs       Int          @default(142)
+  inputJson        String       @default("{}")
+  outputJson       String       @default("{}")
+  stepsLogJson     String       @default("[]")
+  pdfArtifactHtml  String?
+  triggeredByEmail String?
+  createdAt        DateTime     @default(now())
+
+  @@index([workflowId, createdAt])
+}
+
+model WorkspaceIntegration {
+  id           String    @id @default(cuid())
+  workspaceId  String
+  workspace    Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  providerId   String
+  name         String
+  category     String    @default("CRM")
+  status       String    @default("CONNECTED")
+  configJson   String    @default("{}")
+  secretMasked String    @default("••••••••••••••••")
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model OrgSetting {
+  key       String   @id
+  valueJson String
+  updatedAt DateTime @updatedAt
+}

@@ -1,0 +1,757 @@
+{
+  "timestamp": "2026-10-20T02:24:26.629Z",
+  "pages": [
+    {
+      "label": "www_zite_home_desktop",
+      "url": "https://www.zite.com/",
+      "title": "Zite | The AI builder that means business",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "The AI builder that means business"
+        },
+        {
+          "tag": "H2",
+          "text": "Build your team's operating system"
+        },
+        {
+          "tag": "H2",
+          "text": "Build and deploy with confidence"
+        },
+        {
+          "tag": "H3",
+          "text": "Build business apps, fast"
+        },
+        {
+          "tag": "H3",
+          "text": "Understand every layer"
+        },
+        {
+          "tag": "H3",
+          "text": "Deploy to your users"
+        },
+        {
+          "tag": "H2",
+          "text": "Put AI to work"
+        },
+        {
+          "tag": "H2",
+          "text": "Bring your favorite agent"
+        },
+        {
+          "tag": "H2",
+          "text": "Integrate with all your apps"
+        },
+        {
+          "tag": "H2",
+          "text": "Start from a whole workspace"
+        },
+        {
+          "tag": "H2",
+          "text": "Join 100,000+ teams\nbuilding with Zite"
+        },
+        {
+          "tag": "H4",
+          "text": "General"
+        },
+        {
+          "tag": "H4",
+          "text": "Product"
+        },
+        {
+          "tag": "H4",
+          "text": "Resources"
+        },
+        {
+          "tag": "H4",
+          "text": "Use Cases"
+        }
+      ],
+      "links": [
+        {
+          "text": "Zite home",
+          "href": "/"
+        },
+        {
+          "text": "Enterprise",
+          "href": "/enterprise?src=zite-nav"
+        },
+        {
+          "text": "Pricing",
+          "href": "/pricing"
+        },
+        {
+          "text": "Sign in",
+          "href": "https://app.zite.com/login?redirectPath=%2Fhome%2Fzite%2Fnew"
+        },
+        {
+          "text": "Create account",
+          "href": "https://app.zite.com/signup?redirectPath=%2Fhome%2Fzite%2Fnew"
+        },
+        {
+          "text": "Dashboard",
+          "href": "https://app.zite.com/home"
+        },
+        {
+          "text": "Dashboard",
+          "href": "https://app.zite.com/home"
+        },
+        {
+          "text": "New\nPre-built apps for sales, hiring and more",
+          "href": "/marketplace"
+        },
+        {
+          "text": "Use your agent",
+          "href": "https://developers.zite.com/"
+        },
+        {
+          "text": "Apps\n\nBuild custom interfaces",
+          "href": "/apps"
+        },
+        {
+          "text": "Workflows\n\nAutomation & schedules",
+          "href": "/workflows"
+        },
+        {
+          "text": "Websites\n\nPublic sites & portals",
+          "href": "/marketplace/categories/sites"
+        },
+        {
+          "text": "Forms\nFillout by Zite\n\nData intake",
+          "href": "https://www.fillout.com/"
+        },
+        {
+          "text": "DatabasesThe best database for app and form data",
+          "href": "/database"
+        },
+        {
+          "text": "Build with your agent",
+          "href": "https://developers.zite.com/"
+        },
+        {
+          "text": "View integrations",
+          "href": "/integrations"
+        },
+        {
+          "text": "Education",
+          "href": "/marketplace/categories/education"
+        },
+        {
+          "text": "Operations",
+          "href": "/marketplace/categories/operations"
+        },
+        {
+          "text": "Sales",
+          "href": "/marketplace/categories/sales"
+        },
+        {
+          "text": "HR",
+          "href": "/marketplace/categories/hr"
+        },
+        {
+          "text": "Customer portals",
+          "href": "/marketplace/categories/customer-portals"
+        },
+        {
+          "text": "& more",
+          "href": "/marketplace"
+        },
+        {
+          "text": "CRM\n2 apps\nSales\nReplaces\nPipedrive, Salesforce, HubSpot",
+          "href": "/marketplace/customer-relationship-management"
+        },
+        {
+          "text": "Learning Management System\n2 apps\nEducation\nReplaces\nTeachable, Absorb Software, TalentLMS, Thinkific\n+1",
+          "href": "/marketplace/lms"
+        },
+        {
+          "text": "Property Management\n2 apps\nOperations\nReplaces\nBuildium, AppFolio, Rent Manager, TenantCloud\n+1",
+          "href": "/marketplace/property-management"
+        },
+        {
+          "text": "Community Hub\n2 apps\nCustomer portals\nReplaces\nCircle, Teachable",
+          "href": "/marketplace/community-hub"
+        },
+        {
+          "text": "Business Process Mapper\n1 app\nOperations",
+          "href": "/marketplace/business-process-mapper"
+        },
+        {
+          "text": "Grant Management\n2 apps\nOperations\nReplaces\nSubmittable, Fluxx, Foundant Technologies",
+          "href": "/marketplace/grant-management"
+        },
+        {
+          "text": "View marketplace",
+          "href": "/marketplace"
+        },
+        {
+          "text": "Customer stories",
+          "href": "/customers"
+        },
+        {
+          "text": "Zite on LinkedIn",
+          "href": "https://www.linkedin.com/company/zitecom"
+        },
+        {
+          "text": "Zite on X",
+          "href": "https://x.com/zite"
+        },
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Careers",
+          "href": "https://recruiting.zite.com/join-us"
+        },
+        {
+          "text": "What's new",
+          "href": "https://www.zite.com/help/whats-new"
+        },
+        {
+          "text": "Enterprise",
+          "href": "/enterprise?src=zite-footer"
+        },
+        {
+          "text": "Apps",
+          "href": "/apps"
+        },
+        {
+          "text": "Databases",
+          "href": "/database"
+        },
+        {
+          "text": "Workflows",
+          "href": "/workflows"
+        },
+        {
+          "text": "Fillout",
+          "href": "https://www.fillout.com"
+        },
+        {
+          "text": "Customers",
+          "href": "/customers"
+        },
+        {
+          "text": "Partners",
+          "href": "https://partners.zite.com/"
+        },
+        {
+          "text": "Help Center",
+          "href": "https://www.zite.com/help"
+        },
+        {
+          "text": "Developer docs",
+          "href": "https://developers.zite.com/"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Marketplace",
+          "href": "/marketplace"
+        },
+        {
+          "text": "Integrations",
+          "href": "/integrations"
+        },
+        {
+          "text": "Spreadsheet to App",
+          "href": "/spreadsheet-to-app"
+        },
+        {
+          "text": "AI app builder comparison",
+          "href": "/ai-app-builder-comparison"
+        },
+        {
+          "text": "Status",
+          "href": "https://fillout.statuspage.io/"
+        },
+        {
+          "text": "Agencies",
+          "href": "/for-agencies"
+        },
+        {
+          "text": "Small Businesses",
+          "href": "/for-small-businesses"
+        },
+        {
+          "text": "Education",
+          "href": "/for-education"
+        },
+        {
+          "text": "Marketing Teams",
+          "href": "/for-marketing-teams"
+        },
+        {
+          "text": "Sales Teams",
+          "href": "/for-sales"
+        },
+        {
+          "text": "Operations",
+          "href": "/for-operations"
+        },
+        {
+          "text": "Local Government",
+          "href": "/for-local-government"
+        },
+        {
+          "text": "Nonprofits",
+          "href": "/for-nonprofits"
+        },
+        {
+          "text": "SOC II Type 2 Compliant",
+          "href": "https://www.zite.com/help/security"
+        },
+        {
+          "text": "256-bit AES Data encryption",
+          "href": "https://www.zite.com/help/security"
+        },
+        {
+          "text": "Privacy",
+          "href": "/privacy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        },
+        {
+          "text": "Guidelines",
+          "href": "/acceptable-use"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Product",
+          "disabled": false
+        },
+        {
+          "text": "Solutions",
+          "disabled": false
+        },
+        {
+          "text": "Resources",
+          "disabled": false
+        },
+        {
+          "text": "Open navigation menu",
+          "disabled": false
+        },
+        {
+          "text": "New Suggestion",
+          "disabled": false
+        },
+        {
+          "text": "Attach",
+          "disabled": false
+        },
+        {
+          "text": "Build it",
+          "disabled": false
+        },
+        {
+          "text": "Choose build mode",
+          "disabled": false
+        },
+        {
+          "text": "Connect",
+          "disabled": false
+        },
+        {
+          "text": "Show the ChatGPT demo",
+          "disabled": false
+        },
+        {
+          "text": "Show the Claude demo",
+          "disabled": false
+        },
+        {
+          "text": "Show the Cursor demo",
+          "disabled": false
+        },
+        {
+          "text": "New Suggestion",
+          "disabled": false
+        },
+        {
+          "text": "Connect apps",
+          "disabled": false
+        },
+        {
+          "text": "Attach",
+          "disabled": false
+        },
+        {
+          "text": "Theme Selector",
+          "disabled": false
+        },
+        {
+          "text": "Get started",
+          "disabled": false
+        },
+        {
+          "text": "24/5 Tech support Here if you need us",
+          "disabled": false
+        },
+        {
+          "text": "Open Intercom Messenger",
+          "disabled": false
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "placeholder": "",
+          "ariaLabel": "Describe what you want to build...",
+          "name": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "placeholder": "",
+          "ariaLabel": "",
+          "name": ""
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": "",
+          "placeholder": "",
+          "ariaLabel": "Describe what you want to build...",
+          "name": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "file",
+          "placeholder": "",
+          "ariaLabel": "",
+          "name": ""
+        }
+      ],
+      "bodyText": "Product\nSolutions\nResources\nEnterprise\nPricing\nDashboard\nNew\nPre-built apps for sales, hiring and more\nThe AI builder that means business\n\nRun your operations on one system — custom Apps and Workflows, built on a Database your team can rely on.\n\nCreate an employee directory with roles, departments, and start dates\nNew Suggestion\nBuild it\nConnect\nUse your agent\nWhy Zite\nBuild your team's operating system\n\nTurn your processes into scalable business systems for people and AI.\n\nApps\n\nBuild custom interfaces\n\nWorkflows\n\nAutomation & schedules\n\nWebsites\n\nPublic sites & portals\n\nForms\nFillout by Zite\n\nData intake\n\nDatabase\n\n482,193 records\nAll records\nSort\nFilter\nHide fields\nName\nTeam\nAssignees\nStatus\n1\nJane Smith\nDesign\nJS\nJane Smith\nMJ\nMichael Johnson\nActive\n2\nMichael Johnson\nEngineering\nMJ\nMichael Johnson\nLG\nLinda Garcia\nActive\n3\nEmily Davis\nMarketing\nED\nEmily Davis\nNot started\n4\nRobert Brown\nEngineering\nRB\nRobert Brown\nJW\nJames Wilson\nPending approval\n5\nLinda Garcia\nDesign\nLG\nLinda Garcia\nActive\n6\nJames Wilson\nOperations\nJW\nJames Wilson\nED\nEmily Davis\nActive\n7\nPatricia Moore\nMarketing\nPM\nPatricia Moore\nDK\nDavid Kim\nNot started\n8\nDavid Kim\nEngineering\nDK\nDavid Kim\nPending approval\n9\nSarah Lee\nOperations\nSL\nSarah Lee\nJS\nJane Smith\nActive\nHow it works\nBuild and deploy with confidence\n\nDescribe what you need and ship production systems.\n\nBuild business apps, fast\n\nPrompt to build the software you need.\nDescribe your app and watch Zite get to work.\n\nUnderstand every layer\n\nSee the workflows under your app.\n\nDeploy to your users\n\nShip your app to internal or external users.\nNo per user fees, ever.\n\napp.zite.com\n\n​\n\nDatabase\nUsers\nInternal portal\nPreview\nWorkflows\nSettings\nPublish\nPut AI to work\n\nZite gives agents the context, permissions, and tools to take action across your business.\n\nKnows your processes, like a teammate\nFollows the guardrails you define\nLet agents take action, safely\nMonday 9:00\nrunning\nReading the onboarding skill..\nOnboarding Playbook.md\nRead\nChecking permissions..\nRoles\nWrite\nField permissions\nWrite\nSending welcome emails..\nWelcome email\nDraft\nSent\nTo\nmayacole@acme.com\nSubject\nWelcome email\nAll done, 2 clients onboarded!\n\nBuild where you want\n\nBring your favorite agent\n\nConnect your favourite AI tools to Zite using MCP and interact with your Zite apps and databases.\n\nBuild with your agent\nclaude.ai\n\n@zite build an internal app to track leads and match it to my brand\n\nConnected to Zite\nScaffolding database\nCreating app...\nRoles\nNotifications\nFiles storage\nHosting\nDatabase\nAudit logs\nAuthentication\nApprovals\nIntegrations\nIntegrate with all your apps\n\nTurn your processes into scalable business systems for people and AI.\n\nView integrations\nMarketplace\nStart from a whole workspace\n\nEach solution is a shared database plus the apps built on it. Start your own copy and customize it with no per-user fees.\n\nEducation\nOperations\nSales\nHR\nCustomer portals\n& more\nCRM\n2 apps\nSales\nReplaces\nPipedrive, Salesforce, HubSpot\nLearning Management System\n2 apps\nEducation\nReplaces\nTeachable, Absorb Software, TalentLMS, Thinkific\n+1\nProperty Management\n2 apps\nOperations\nReplaces\nBuildium, AppFolio, Rent Manager, TenantCloud\n+1\nCommunity Hub\n2 apps\nCustomer portals\nReplaces\nCircle, Teachable\nBusiness Process Mapper\n1 app\nOperations\nGrant Management\n2 apps\nOperations\nReplaces\nSubmittable, Fluxx, Foundant Technologies\nView marketplace\nOur customers\nJoin 100,000+ teams\nbuilding with Zite\n\n\"We've tried many tools over the years.\n\nZite is in a league of its own.\n\nIt's more robust, more flexible and saves our county time and money.\"\n\nRavi K. Udeshi\n\nElection Manager, Fairfax County\n\n\"Our new Grant Management System in Zite is saving 40% of the time our staff previously spent on administrative burden.\n\nThat's an annual savings of about $1.9 million.\"\n\nAnna Sherr\n\nDeputy Director, City of Boston\n\n\"If you ask anyone at Hack Club, Zite is synonymous with filling in a form.\n\nIt's literally the only solution we have and we need.\"\n\nLeo Wilkin\n\nDirector of Event Operations, Hack Club\n\n\"We used to have a massive backlog of app and internal tool requests.\n\nNow anyone on our team can build the software they need, and we know the apps match our brand and IT guidelines.\"\n\nMichael Villenave\n\nHead of Internal Comms, Domino's France\n\n\"We used to spend literally weeks matching up the last survey's data with this survey's data, looking for outliers and following up with people.\n\nNow my team spends that time working with the data.\"\n\nStephanie Anderson\n\nAssociate Director, New York Public Library\n\n\"I never felt like we had to shape-shift or alter how our process worked.\n\nZite existed so we could do what we did best.\"\n\nMelina Morris\n\nSenior Impact Manager, Bombas\n\n\"As Iceland's largest media company, we've deployed Zite across all our brands.\n\nWe love Zite for its ease of use, SSO login, Salesforce integration, and their excellent support team.\"\n\nDiana Viglundsdottir\n\nDirector of Product, Syn.is\n\n\"I know today how many people were born in Montg"
+    },
+    {
+      "label": "app_zite_entry",
+      "url": "https://app.zite.com/login?redirectPath=%2Fhome&reauth=1",
+      "title": "Zite",
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Sign in to Zite"
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://zite.com"
+        },
+        {
+          "text": "Create account",
+          "href": "/signup?redirectPath=%2Fhome"
+        },
+        {
+          "text": "single sign-on",
+          "href": "/sso"
+        },
+        {
+          "text": "Create account",
+          "href": "/signup?redirectPath=%2Fhome"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://fillout.com/privacy"
+        },
+        {
+          "text": "Terms",
+          "href": "https://fillout.com/terms/"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Sign in with Google",
+          "disabled": false
+        },
+        {
+          "text": "Sign in with Microsoft",
+          "disabled": false
+        },
+        {
+          "text": "Sign in with email",
+          "disabled": false
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "email",
+          "placeholder": "",
+          "ariaLabel": "",
+          "name": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "password",
+          "placeholder": "",
+          "ariaLabel": "",
+          "name": ""
+        }
+      ],
+      "bodyText": "Sign in to Zite\n\nWelcome back. Please sign in to continue\n\nSign in with Google\nSign in with Microsoft\nOr\nEmail\nSign in with email\nUse single sign-on\nNew to Zite?\nCreate account\nBy using Zite, you are agreeing to our Privacy Policy and Terms."
+    }
+  ],
+  "apiCalls": [
+    {
+      "method": "GET",
+      "url": "https://www.zite.com/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zite.com/_next/static/media/53267fe46f3954f1-s.p.ttf",
+      "status": 200,
+      "contentType": "font/ttf",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zite.com/_next/static/media/ff4347d1e262bfa6-s.p.ttf",
+      "status": 200,
+      "contentType": "font/ttf",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zite.com/_next/image?url=%2FcustomerLogos%2FHarvardLogo.png&w=128&q=75",
+      "status": 200,
+      "contentType": "image/webp",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zite.com/_next/data/ttOJA_aPDex5vgldcIsjZ/enterprise.json?src=zite-nav",
+      "status": 200,
+      "contentType": "",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zite.com/_next/data/ttOJA_aPDex5vgldcIsjZ/marketplace.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": "{\"pageProps\":{\"featured\":[{\"id\":115500,\"name\":\"CRM\",\"slug\":\"customer-relationship-management\",\"description\":\"A full CRM covering contacts, companies, deals, and quotes in one shared database. The CRM app is where your team manages leads through pipeline stages, logs activities, runs email sequences, and tracks quotas. CRM Pages exposes booking pages, forms, and document views to the outside world.\",\"imageUrl\":\"https://images.fillout.com/orgid-821859/flowpublicid-marketplace/widgetid-cover/oGLew6JjGtTqP65uXVvCEr/Screenshot-2026-10-02-at-6.04.21aPM.png\",\"categories\":[\"sales\",\"internalTools\"],\"clonesCount\":30,\"isFeatured\":true,\"createdAt\":\"2026-10-02T20:15:26.150Z\",\"primaryAppPublicIdentifier\":\"rnc1vjxbjr\",\"appCount\":2,\"appIcons\":[{\"type\":\"zite\",\"icon\":null,\"color\":null},{\"type\":\"zite\",\"icon\":null,\"color\":null}],\"fallbackImageUrl\":null,\"workspaceColor\":null,\"replaces\":[{\"brand\":\"pipedrive\",\"label\":\"Pipedrive\"},{\"brand\":\"salesforce\",\"label\":\"Salesforce\"},{\"brand\":\"hubspot\",\"label\":\"HubSpot\"}],\"creator\":{\"handle\":\"zite-team\",\"displayName\":\"Zite\",\"profilePictureUrl\":\"https://images.fillout.com/orgid-821859/flowpublicid-creator-1789689327159/widgetid-default/k8Xxn7F4ubjFzrdKmGjHnG/zite_logo.png\",\"contactsDirectly\":false}},{\"id\":115408,\"name\":\"Learning Management System\",\"slug\":\"lms\",\"description\":\"A full learning management system for building and delivering courses to learners. Staff manage courses, lessons, quizzes, paths, and enrollments in the Dashboard, while learners access th"
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zite.com/_next/data/ttOJA_aPDex5vgldcIsjZ/index.json",
+      "status": 200,
+      "contentType": "",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zite.com/_next/data/ttOJA_aPDex5vgldcIsjZ/pricing.json",
+      "status": 200,
+      "contentType": "",
+      "bodyPreview": null
+    },
+    {
+      "method": "POST",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4DYEDM24N5&gtm=45je6ag1v9245075925za20ozb9244109562zd9244109562xf1&_p=1792463067368&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1007622529.1792463068&frm=0&ngs=1&pscdl=noapi&rcb=17&sr=1440x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&sid=1792463067&sct=1&seg=0&dl=https%3A%2F%2Fwww.zite.com%2F&dt=Zite%20%7C%20The%20AI%20builder%20that%20means%20business&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=1199",
+      "status": 204,
+      "contentType": "text/plain",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://connect.facebook.net/signals/config/1237047324678999?v=2.9.425&r=stable&domain=www.zite.com&hme=766752a074f0cb0756dd3275a46fdecbcfe3de1ab8f573546734b619e44d384f&ex_m=118%2C241%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C56%2C127%2C54%2C161%2C72%2C185%2C110%2C184%2C210%2C255%2C84%2C274%2C273%2C272%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C324%2C325%2C326%2C323%2C340%2C362%2C248%2C237%2C70%2C238%2C236%2C365%2C356%2C59%2C249%2C121%2C145%2C92%2C135%2C61%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "status": 200,
+      "contentType": "application/x-javascript; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zite.com/_next/data/ttOJA_aPDex5vgldcIsjZ/apps.json",
+      "status": 200,
+      "contentType": "",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zite.com/_next/data/ttOJA_aPDex5vgldcIsjZ/marketplace/categories/sites.json?slug=sites",
+      "status": 200,
+      "contentType": "",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://www.zite.com/_next/data/ttOJA_aPDex5vgldcIsjZ/workflows.json",
+      "status": 200,
+      "contentType": "",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://app.zite.com/",
+      "status": 307,
+      "contentType": "text/html; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://app.zite.com/home",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://assets.zite.com/_next/static/media/InterVariable_Italic-s.p.1eh2wfqjgrpm8.ttf",
+      "status": 200,
+      "contentType": "font/ttf",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://assets.zite.com/_next/static/media/InterVariable-s.p.153gulfmx67vg.ttf",
+      "status": 200,
+      "contentType": "font/ttf",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://app.zite.com/_next/data/OZWKvJlRPkhPDzcDqez3b/home.json",
+      "status": 200,
+      "contentType": "",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/embed/v1/",
+      "status": 200,
+      "contentType": "application/javascript; charset=UTF-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://app.zite.com/login?redirectPath=%2Fhome&reauth=1",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://assets.zite.com/_next/static/media/InterVariable-s.p.153gulfmx67vg.ttf",
+      "status": 200,
+      "contentType": "font/ttf",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://assets.zite.com/_next/static/media/InterVariable_Italic-s.p.1eh2wfqjgrpm8.ttf",
+      "status": 200,
+      "contentType": "font/ttf",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/admin/zite/usageStats/summary",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/workspaces/",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/admin/flows/recent?limit=10",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/admin/organizations",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/workspaces/-1",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/admin/flows/hasScheduling",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/admin/services",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/admin/whatsNewV2/status?category=Home",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/admin/profile",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/admin/customDomains",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/admin/flows/starred",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://server.zite.com/admin/whatsNew/status",
+      "status": 403,
+      "contentType": "application/json; charset=utf-8",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://app.zite.com/_next/data/OZWKvJlRPkhPDzcDqez3b/sso.json",
+      "status": 200,
+      "contentType": "",
+      "bodyPreview": null
+    },
+    {
+      "method": "GET",
+      "url": "https://app.zite.com/_next/data/OZWKvJlRPkhPDzcDqez3b/signup.json?redirectPath=%2Fhome",
+      "status": 200,
+      "contentType": "",
+      "bodyPreview": null
+    }
+  ]
+}

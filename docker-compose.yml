@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: zite
+      POSTGRES_PASSWORD: zite_prod_password
+      POSTGRES_DB: zite_prod
+    ports:
+      - "5432:5432"
+    volumes:
+      - zite_pgdata:/var/lib/postgresql/data
+
+  zite-app:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    ports:
+      - "3100:3100"
+    environment:
+      DATABASE_URL: "postgresql://zite:zite_prod_password@postgres:5432/zite_prod?schema=public"
+      NEXTAUTH_URL: "http://localhost:3100"
+      NEXTAUTH_SECRET: "${NEXTAUTH_SECRET:-change-me-in-production}"
+      AI_PROVIDER: "${AI_PROVIDER:-copilot-sdk}"
+      AZURE_OPENAI_ENDPOINT: "${AZURE_OPENAI_ENDPOINT:-}"
+      AZURE_OPENAI_API_KEY: "${AZURE_OPENAI_API_KEY:-}"
+      AZURE_OPENAI_DEPLOYMENT: "${AZURE_OPENAI_DEPLOYMENT:-gpt-4o}"
+
+volumes:
+  zite_pgdata:

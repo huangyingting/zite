@@ -1,0 +1,829 @@
+[
+  {
+    "label": "18_app_login",
+    "requestedUrl": "https://app.zite.com/login",
+    "finalUrl": "https://app.zite.com/login",
+    "title": "Zite",
+    "headings": [
+      "Sign in to Zite"
+    ],
+    "buttons": [
+      "Sign in with Google",
+      "Sign in with Microsoft",
+      "Sign in with email"
+    ],
+    "inputs": [
+      {
+        "type": "email",
+        "placeholder": "",
+        "name": ""
+      },
+      {
+        "type": "password",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Sign in to Zite\n\nWelcome back. Please sign in to continue\n\nSign in with Google\nSign in with Microsoft\nOr\nEmail\nSign in with email\nUse single sign-on\nNew to Zite?\nCreate account\nBy using Zite, you are agreeing to our Privacy Policy and Terms."
+  },
+  {
+    "label": "19_app_signup",
+    "requestedUrl": "https://app.zite.com/signup",
+    "finalUrl": "https://app.zite.com/signup",
+    "title": "Zite",
+    "headings": [
+      "Create your account"
+    ],
+    "buttons": [
+      "Sign up with Google",
+      "Sign up with Microsoft",
+      "Continue with email"
+    ],
+    "inputs": [
+      {
+        "type": "email",
+        "placeholder": "",
+        "name": ""
+      },
+      {
+        "type": "password",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Create your account\n\nAlready have an account? Sign in\n\nSign up with Google\nSign up with Microsoft\nOr\nEmail\nContinue with email\nBy using Zite, you are agreeing to our Privacy Policy and Terms."
+  },
+  {
+    "label": "20_app_sso",
+    "requestedUrl": "https://app.zite.com/sso",
+    "finalUrl": "https://app.zite.com/sso",
+    "title": "Zite",
+    "headings": [
+      "Sign in to Zite"
+    ],
+    "buttons": [
+      "Sign in with SSO"
+    ],
+    "inputs": [
+      {
+        "type": "email",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Sign in to Zite\n\nWelcome back. Please sign in to continue\n\nEmail\nSign in with SSO\nUse another sign in method\nNew to Zite?\nCreate account\nBy using Zite, you are agreeing to our Privacy Policy and Terms."
+  },
+  {
+    "label": "21_app_reset_password",
+    "requestedUrl": "https://app.zite.com/reset-password",
+    "finalUrl": "https://app.zite.com/reset-password",
+    "title": "Zite",
+    "headings": [
+      "Reset your password"
+    ],
+    "buttons": [
+      "Back",
+      "Send reset instructions"
+    ],
+    "inputs": [
+      {
+        "type": "email",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Back\nReset your password\n\nEnter the email associated with your account, and we'll send a link to reset your password.\n\nEmail\nSend reset instructions\nNeed help? Contact support\nBy using Zite, you are agreeing to our Privacy Policy and Terms."
+  },
+  {
+    "label": "22_app_invite_signup",
+    "requestedUrl": "https://app.zite.com/invite/signup",
+    "finalUrl": "https://app.zite.com/invite/signup",
+    "title": "Zite",
+    "headings": [
+      "Create your account"
+    ],
+    "buttons": [
+      "Sign up with Google",
+      "Sign up with Microsoft",
+      "Continue with email"
+    ],
+    "inputs": [
+      {
+        "type": "email",
+        "placeholder": "",
+        "name": ""
+      },
+      {
+        "type": "password",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Create your account\n\nAlready have an account? Sign in\n\nSign up with Google\nSign up with Microsoft\nOr\nEmail\nContinue with email\nBy using Zite, you are agreeing to our Privacy Policy and Terms."
+  },
+  {
+    "label": "23_app_expired",
+    "requestedUrl": "https://app.zite.com/expired",
+    "finalUrl": "https://app.zite.com/expired",
+    "title": "Fillout",
+    "headings": [
+      "Form closed to new submissions"
+    ],
+    "buttons": [],
+    "inputs": [],
+    "bodyText": "Form closed to new submissions\n\nContact the form owner for more details."
+  },
+  {
+    "label": "24_app_disabled",
+    "requestedUrl": "https://app.zite.com/disabled",
+    "finalUrl": "https://app.zite.com/disabled",
+    "title": "Zite",
+    "headings": [],
+    "buttons": [],
+    "inputs": [],
+    "bodyText": "This account has been disabled by Zite's spam review team.\nFill out this form if you believe this was a mistake.\nContact support@zite.com with any questions."
+  },
+  {
+    "label": "25_app_404",
+    "requestedUrl": "https://app.zite.com/404",
+    "finalUrl": "https://app.zite.com/404",
+    "title": "Page not found",
+    "headings": [
+      "Page not found"
+    ],
+    "buttons": [
+      "Go to Zite"
+    ],
+    "inputs": [],
+    "bodyText": "Zite\n404\nPage not found\nGo to Zite\nZite\nX"
+  },
+  {
+    "label": "26_zite_live_demo_crm",
+    "requestedUrl": "https://zite-demo-rnc1vjxbjr.zite.so/",
+    "finalUrl": "https://zite-demo-rnc1vjxbjr.zite.so/#/home",
+    "title": "Home · Ashgrove Software",
+    "headings": [
+      "Good morning, Dominic",
+      "Inbox"
+    ],
+    "buttons": [
+      "Search\nCtrl\nK",
+      "Search",
+      "Inbox, 6 unread",
+      "New",
+      "DO",
+      "Sections",
+      "New task",
+      "New deal"
+    ],
+    "inputs": [],
+    "bodyText": "AS\nAshgrove Software\nHome\nLeads\n9\nDeals\nCompanies\nContacts\nTasks\nOutreach\nReports\nSearch\nCtrl\nK\nNew\nDO\nTuesday · Oct 20, 2026\nGood morning, Dominic\n\nNew task\nNew deal\nInbox\nOpen"
+  },
+  {
+    "label": "27_help_workspaces",
+    "requestedUrl": "https://www.zite.com/help/platform/workspaces/overview",
+    "finalUrl": "https://www.zite.com/help/platform/workspaces/overview",
+    "title": "Overview - Zite - Help Center",
+    "headings": [
+      "Documentation Index",
+      "Getting Started",
+      "Workspaces",
+      "How to Build",
+      "Features",
+      "Access & Sharing",
+      "Account",
+      "Migrate From",
+      "Developer",
+      "Security & Legal",
+      "On this page",
+      "Overview",
+      "​\nWhat a workspace includes",
+      "One database",
+      "Multiple apps",
+      "Forms",
+      "Users & roles",
+      "​\nFind things in your workspace",
+      "​\nAdd apps and forms",
+      "​\nWhen to create another workspace"
+    ],
+    "buttons": [
+      "Search...\nCtrl K",
+      "Change theme preference",
+      "Search...",
+      "More actions",
+      "NavigationWorkspacesOverview",
+      "Agent Modes",
+      "Customize Links",
+      "Audit Logs",
+      "Legal",
+      "Data & Infrastructure",
+      "On this page",
+      "Copy page",
+      "More actions",
+      "Copy pageCopy page",
+      "More actions",
+      "Expand image: A Zite workspace home showing its database, users and roles, apps, forms, and organized workspace sections",
+      "Yes",
+      "No",
+      "Send message",
+      "Switch to system theme",
+      "Switch to light theme",
+      "Switch to dark theme"
+    ],
+    "inputs": [
+      {
+        "type": "TEXTAREA",
+        "placeholder": "Ask a question...",
+        "name": ""
+      },
+      {
+        "type": "TEXTAREA",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nZite - Help Center home page\nSearch...\nCtrl K\nDevelopers\nGet started\nPlatform\nDatabase\nIntegrations\nWhat's New\nGetting Started\nWelcome\nQuickstart\nSolutions Marketplace\nHire a partner\nWhat can I build?\nHow AI coding works\nApp Usage\nHow credits work\nCredit Efficiency\nGlossary\nZite FAQs\nWorkspaces\nOverview\nOrganize your workspace\nManaging users\nMCP & Agents\nContext & Integrations\nPlans & limits\nMigrate your workspaces\nHow to Build\nCreate an app\nAgent Modes\nDesign tools\nImprove my app\nCreate a Brand Kit\nWorkflows\nWorkflow Runs\nScheduled Workflows\nWebhooks\nTroubleshooting\nFeatures\nSelective Edits\nMulti-chat\nModel Selection\nNotifications and emails\nEmbed Zite app\nCustomize Links\nRecover Old Version\nPDF Generation\nCode viewing & editing\nQR Codes\nView Analytics\nAccess & Sharing\nOverview\nInternal Apps\nShare to Web\nAuthentication\nMembers & Users\nUser Data\nCustom Access Rules\nApp SSO\nUser Sync\nDuplicate, Export, and Import\nWorking with Clients\nUser Groups\nCreation permissions\nMobile\nAccount\nSubscription and Billing\nAI credit limits\nAffiliate Program\nCancel Plan\nZite Refund Policy\nAudit Logs\nMigrate From\nOverview\nAirtable\nDeveloper\nUse Secrets\nSecurity & Legal\nOverview\nSecurity at Zite\nFERPA\nLegal\nData & Infrastructure\nOn this page\nWhat a workspace includes\nFind things in your workspace\nAdd apps and forms\nWhen to create another workspace\nWorkspaces\nOverview\nCopy page\n\nBring your people, apps, and context together in one place to build and run the systems your team relies on.\n\nA workspace is the project container for a Zite build. When you create a new app, form, or database, Zite provisions a workspace so the related pieces can live together.\nEvery workspace includes one database. You can then add as many apps and forms as the project needs, all connected to the same underlying data.\n​\nWhat a workspace includes\nWorkspaces keep the operational parts of a project in one place.\nOne database\nEach workspace has one Zite Database for the records, tables, and relationships that power the project.\nMultiple apps\nAdd internal apps for your team and external apps for public pages, portals, or other shared experiences.\nForms\nAdd forms when you need to collect submissions, requests, files, approvals, or updates into the workspace database.\nUsers & roles\nAdd editors, manage the people who use each app, and configure database roles.\n​\nFind things in your workspace\nOn the workspace overview, press ⌘K to search. Results stay in that workspace by default. Clear the search field to look across your organization. Search is not available inside the app editor.\nYou can find apps, forms, and tables (not individual rows), plus people, roles, and connections (shown as Integrations). Search also includes Go to and Create shortcuts.\nIf you have use-only access, search shows published apps. Tables, people, roles, and integrations need editor access.\n​\nAdd apps and forms\nA workspace can grow over time. Start with the app, form, or database you need first, then add more apps and forms as the workflow becomes clearer.\nApps can be:\nInternal: admin dashboards, team tools, review queues, operations panels, and other apps used by people inside your organization.\nExternal: public-facing apps, landing pages, client portals, partner portals, or other shared experiences that people outside your internal team can launch by link.\nBecause each workspace has one database, the apps and forms in that workspace can work around the same records instead of becoming separate projects.\n​\nWhen to create another workspace\nUse a new workspace when the project needs a separate database, a different team of editors, or a separate business system. Keep apps and forms in the same workspace when they should share data and be managed by the same team.\nCommon reasons to keep work in one workspace:\nAn internal dashboard and public portal should use the same customer records\nA form should create or update records used by an app\nThe same editors need to manage the database and apps\nSeveral apps represent different views of the same operation\nCommon reasons to create a separate workspace:\nThe new project needs its own database\nA different team should manage editors, app members, and roles\nThe apps and forms do not need to share records\nThe project belongs to a different client, department, or business process\n\nRelated topics\n"
+  },
+  {
+    "label": "28_help_create_app",
+    "requestedUrl": "https://www.zite.com/help/platform/how-to-build/creating-an-app",
+    "finalUrl": "https://www.zite.com/help/platform/how-to-build/creating-an-app",
+    "title": "Create an app - Zite - Help Center",
+    "headings": [
+      "Documentation Index",
+      "Getting Started",
+      "Workspaces",
+      "How to Build",
+      "Features",
+      "Access & Sharing",
+      "Account",
+      "Migrate From",
+      "Developer",
+      "Security & Legal",
+      "On this page",
+      "Create an app",
+      "​\nBefore you build",
+      "Import data",
+      "Match brand",
+      "Integrate",
+      "​\nGetting started",
+      "​\nData options",
+      "​\nAgent modes",
+      "​\nWrite the starting prompt",
+      "​\nExample prompts",
+      "​\nFAQs"
+    ],
+    "buttons": [
+      "Search...\nCtrl K",
+      "Change theme preference",
+      "Search...",
+      "More actions",
+      "NavigationHow to BuildCreate an app",
+      "Agent Modes",
+      "Customize Links",
+      "Audit Logs",
+      "Legal",
+      "Data & Infrastructure",
+      "On this page",
+      "Copy page",
+      "More actions",
+      "Copy pageCopy page",
+      "More actions",
+      "Expand image: Zite starting prompt with App, Database, and Form options",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Yes",
+      "No",
+      "Send message",
+      "Switch to system theme",
+      "Switch to light theme",
+      "Switch to dark theme"
+    ],
+    "inputs": [
+      {
+        "type": "TEXTAREA",
+        "placeholder": "Ask a question...",
+        "name": ""
+      },
+      {
+        "type": "TEXTAREA",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nZite - Help Center home page\nSearch...\nCtrl K\nDevelopers\nGet started\nPlatform\nDatabase\nIntegrations\nWhat's New\nGetting Started\nWelcome\nQuickstart\nSolutions Marketplace\nHire a partner\nWhat can I build?\nHow AI coding works\nApp Usage\nHow credits work\nCredit Efficiency\nGlossary\nZite FAQs\nWorkspaces\nOverview\nOrganize your workspace\nManaging users\nMCP & Agents\nContext & Integrations\nPlans & limits\nMigrate your workspaces\nHow to Build\nCreate an app\nAgent Modes\nDesign tools\nImprove my app\nCreate a Brand Kit\nWorkflows\nWorkflow Runs\nScheduled Workflows\nWebhooks\nTroubleshooting\nFeatures\nSelective Edits\nMulti-chat\nModel Selection\nNotifications and emails\nEmbed Zite app\nCustomize Links\nRecover Old Version\nPDF Generation\nCode viewing & editing\nQR Codes\nView Analytics\nAccess & Sharing\nOverview\nInternal Apps\nShare to Web\nAuthentication\nMembers & Users\nUser Data\nCustom Access Rules\nApp SSO\nUser Sync\nDuplicate, Export, and Import\nWorking with Clients\nUser Groups\nCreation permissions\nMobile\nAccount\nSubscription and Billing\nAI credit limits\nAffiliate Program\nCancel Plan\nZite Refund Policy\nAudit Logs\nMigrate From\nOverview\nAirtable\nDeveloper\nUse Secrets\nSecurity & Legal\nOverview\nSecurity at Zite\nFERPA\nLegal\nData & Infrastructure\nOn this page\nBefore you build\nGetting started\nData options\nAgent modes\nWrite the starting prompt\nExample prompts\nFAQs\nHow to Build\nCreate an app\nCopy page\n\nLearn how to create a Zite app in a new workspace, import data, match your brand, connect integrations, and write an effective starting prompt.\n\nZite is best for internal tools, business apps, dashboards, portals, and workflows tied to existing data. It is not the best primary stack for launching a full SaaS product, though you can build external apps and add login when needed. Learn more in What can I build?.\n​\nBefore you build\nCreating an app starts a new workspace for that app. If you want to add another app to an existing workspace, open that workspace first and create the app from the workspace homepage.\nWhen Zite provisions a new workspace, it also creates a Zite Database for that workspace. You do not have to use that database in the app, although it’s highly recommended. It is there when you need a shared place to store records, power forms, or connect multiple apps around the same data.\nFrom the create screen, you can also prepare the app before sending your first prompt:\nImport data\nBring in existing data from Airtable, CSV, Google Sheets, or Excel before Zite builds the app.\nMatch brand\nApply a Brand Kit so the first version uses your logo, colors, typography, and brand guidelines.\nIntegrate\nConnect services such as Google Sheets, Airtable, Slack, OpenAI, Email, Notion, and any other integration your app should use.\n​\nGetting started\n1\nChoose App\nStart from App so Zite builds the user-facing experience in a new workspace. This is the right starting point for dashboards, portals, admin tools, approval queues, onboarding guides, and other business apps.\n2\nOptional: Import data when needed\nUse Import data to bring in Airtable, CSV, Google Sheets, or Excel data before building. This helps Zite understand the records and fields your app should work with from the start.\n3\nOptional: Match your brand\nUse Match brand to apply a Brand Kit before building so Zite can match your logo, colors, fonts, and guidelines. You can also create a new Brand Kit at this stage, or choose and change a theme later.\n4\nOptional: Connect integrations\nUse Integrate to connect services your app should read from, write to, or trigger. Common integrations include Google Sheets, Airtable, Slack, OpenAI, Email, Notion, Microsoft Teams, and any other integration available in your workspace.\n5\nChoose Plan first or build now\nUse Plan first when the request is new, broad, or connected to multiple pages, roles, approvals, dashboards, database changes, or integrations. Build directly when your first request is small and specific. Building from the home page prompt starts in Auto, unless you chose Plan first. Learn more in Agent Modes.\n6\nSubmit a specific prompt\nInclude the app type, users, workflow, important views, and any login requirements. The more concrete your first prompt is, the better Zite can plan and build the first version.\n​\nData options\nOption\tBest for\nZite Database\tApps where Zite should create and manage the r"
+  },
+  {
+    "label": "29_help_agent_modes",
+    "requestedUrl": "https://www.zite.com/help/platform/how-to-build/agent-modes",
+    "finalUrl": "https://www.zite.com/help/platform/how-to-build/agent-modes/overview",
+    "title": "Agent Modes - Zite - Help Center",
+    "headings": [
+      "Documentation Index",
+      "Getting Started",
+      "Workspaces",
+      "How to Build",
+      "Features",
+      "Access & Sharing",
+      "Account",
+      "Migrate From",
+      "Developer",
+      "Security & Legal",
+      "On this page",
+      "Agent Modes",
+      "​\nChoose the right mode",
+      "​\nSwitching modes"
+    ],
+    "buttons": [
+      "Search...\nCtrl K",
+      "Change theme preference",
+      "Search...",
+      "More actions",
+      "NavigationAgent ModesAgent Modes",
+      "Agent Modes",
+      "Customize Links",
+      "Audit Logs",
+      "Legal",
+      "Data & Infrastructure",
+      "On this page",
+      "Copy page",
+      "More actions",
+      "Copy pageCopy page",
+      "More actions",
+      "Expand image: Mode selector showing Auto, Build, Plan, and Chat, with Build selected",
+      "Yes",
+      "No",
+      "Send message",
+      "Switch to system theme",
+      "Switch to light theme",
+      "Switch to dark theme"
+    ],
+    "inputs": [
+      {
+        "type": "TEXTAREA",
+        "placeholder": "Ask a question...",
+        "name": ""
+      },
+      {
+        "type": "TEXTAREA",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nZite - Help Center home page\nSearch...\nCtrl K\nDevelopers\nGet started\nPlatform\nDatabase\nIntegrations\nWhat's New\nGetting Started\nWelcome\nQuickstart\nSolutions Marketplace\nHire a partner\nWhat can I build?\nHow AI coding works\nApp Usage\nHow credits work\nCredit Efficiency\nGlossary\nZite FAQs\nWorkspaces\nOverview\nOrganize your workspace\nManaging users\nMCP & Agents\nContext & Integrations\nPlans & limits\nMigrate your workspaces\nHow to Build\nCreate an app\nAgent Modes\nOverview\nAuto mode\nBuild mode\nPlan mode\nChat mode\nDesign tools\nImprove my app\nCreate a Brand Kit\nWorkflows\nWorkflow Runs\nScheduled Workflows\nWebhooks\nTroubleshooting\nFeatures\nSelective Edits\nMulti-chat\nModel Selection\nNotifications and emails\nEmbed Zite app\nCustomize Links\nRecover Old Version\nPDF Generation\nCode viewing & editing\nQR Codes\nView Analytics\nAccess & Sharing\nOverview\nInternal Apps\nShare to Web\nAuthentication\nMembers & Users\nUser Data\nCustom Access Rules\nApp SSO\nUser Sync\nDuplicate, Export, and Import\nWorking with Clients\nUser Groups\nCreation permissions\nMobile\nAccount\nSubscription and Billing\nAI credit limits\nAffiliate Program\nCancel Plan\nZite Refund Policy\nAudit Logs\nMigrate From\nOverview\nAirtable\nDeveloper\nUse Secrets\nSecurity & Legal\nOverview\nSecurity at Zite\nFERPA\nLegal\nData & Infrastructure\nOn this page\nChoose the right mode\nSwitching modes\nAgent Modes\nAgent Modes\nCopy page\n\nLearn how Zite’s Auto, Build, Plan, and Chat modes help you plan, create, and ask questions.\n\nZite’s agent modes control what kind of work the agent does. Use them to decide whether Zite should keep building with fewer approval stops, ask before certain changes, plan first, or answer questions without changing your project.\nAuto is the default on the home page and in the app editor. Switch to Build when you want a checkpoint before certain changes. If you prefer Build, choose it from the mode menu and Zite will remember it for that workspace.\n​\nChoose the right mode\nMode\tBest for\tMakes changes?\nAuto mode\tHands-free building with fewer approval stops\tYes\nBuild mode\tCreating, updating, or fixing your app, with a checkpoint before certain changes\tYes\nPlan mode\tScoping and clarifying requirements before building\tNo, it creates a plan\nChat mode\tAsking questions or getting suggestions\tNo\nAuto keeps building like Build but skips most Approve clicks. It still stops for logins, secrets, new apps, and questions — and it isn’t a true leave-and-forget background agent.\nFor large projects or unclear requirements, start in Plan mode. It helps clarify scope before Zite makes changes.\n​\nSwitching modes\nOn the Zite app editor, open the mode menu on the lower left and choose the mode you want. You can also press Shift + Tab or Cmd/Ctrl + . on your keyboard.\nThe same mode control is available on the workspace home.\n\nRelated topics\n\nAuto mode\nBuild mode\nPlan mode\nChat mode\nCreate an app\nModel Selection\nLast modified on October 13, 2026\n\nWas this page helpful?\n\nYes\nNo\nCreate an app\nAuto mode\nZite - Help Center home page\n\nGeneral\n\nHome\nPricing\nCareers\nBlog\nEnterprise\nReport abuse\n\nProduct\n\nApps\nDatabases\nIntegrations\nFillout\n\nResources\n\nHelp Center\nCustomers\nPartners\nMarketplace\nSpreadsheet to App\nStatus\nDeveloper docs\n® 2026 Restly, Inc. DBA Zite"
+  },
+  {
+    "label": "30_help_design_tools",
+    "requestedUrl": "https://www.zite.com/help/platform/how-to-build/design-tools",
+    "finalUrl": "https://www.zite.com/help/platform/how-to-build/design-tools",
+    "title": "Design tools - Zite - Help Center",
+    "headings": [
+      "Documentation Index",
+      "Getting Started",
+      "Workspaces",
+      "How to Build",
+      "Features",
+      "Access & Sharing",
+      "Account",
+      "Migrate From",
+      "Developer",
+      "Security & Legal",
+      "On this page",
+      "Design tools",
+      "​\nOverview",
+      "​\nStart with the whole design",
+      "​\nUse Brand Kit or themes for global style",
+      "​\nSet fonts and colors",
+      "​\nCustom fonts",
+      "​\nGive Zite better references",
+      "​\nCreate images with AI",
+      "​\nImprove the current app",
+      "​\nUse Selective Edits for small changes",
+      "​\nCheck responsive behavior",
+      "​\nKeep the design readable",
+      "​\nA practical design workflow",
+      "​\nCommon design prompts"
+    ],
+    "buttons": [
+      "Search...\nCtrl K",
+      "Change theme preference",
+      "Search...",
+      "More actions",
+      "NavigationHow to BuildDesign tools",
+      "Agent Modes",
+      "Customize Links",
+      "Audit Logs",
+      "Legal",
+      "Data & Infrastructure",
+      "On this page",
+      "Copy page",
+      "More actions",
+      "Copy pageCopy page",
+      "More actions",
+      "Expand image: Brand kit guidelines showing logo, icon, color palette, visual style, and tone of voice",
+      "Expand image: Color settings showing primary background, text, and primary color controls",
+      "Expand image: Font dropdown showing available typefaces and a live app preview",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Expand image: Zite-generated hotel landing page using a placeholder hero image",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Expand image: Selective Edits showing a selected heading with typography and color controls",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Copy the contents from the code block",
+      "Yes",
+      "No",
+      "Send message",
+      "Switch to system theme",
+      "Switch to light theme",
+      "Switch to dark theme"
+    ],
+    "inputs": [
+      {
+        "type": "TEXTAREA",
+        "placeholder": "Ask a question...",
+        "name": ""
+      },
+      {
+        "type": "TEXTAREA",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nZite - Help Center home page\nSearch...\nCtrl K\nDevelopers\nGet started\nPlatform\nDatabase\nIntegrations\nWhat's New\nGetting Started\nWelcome\nQuickstart\nSolutions Marketplace\nHire a partner\nWhat can I build?\nHow AI coding works\nApp Usage\nHow credits work\nCredit Efficiency\nGlossary\nZite FAQs\nWorkspaces\nOverview\nOrganize your workspace\nManaging users\nMCP & Agents\nContext & Integrations\nPlans & limits\nMigrate your workspaces\nHow to Build\nCreate an app\nAgent Modes\nDesign tools\nImprove my app\nCreate a Brand Kit\nWorkflows\nWorkflow Runs\nScheduled Workflows\nWebhooks\nTroubleshooting\nFeatures\nSelective Edits\nMulti-chat\nModel Selection\nNotifications and emails\nEmbed Zite app\nCustomize Links\nRecover Old Version\nPDF Generation\nCode viewing & editing\nQR Codes\nView Analytics\nAccess & Sharing\nOverview\nInternal Apps\nShare to Web\nAuthentication\nMembers & Users\nUser Data\nCustom Access Rules\nApp SSO\nUser Sync\nDuplicate, Export, and Import\nWorking with Clients\nUser Groups\nCreation permissions\nMobile\nAccount\nSubscription and Billing\nAI credit limits\nAffiliate Program\nCancel Plan\nZite Refund Policy\nAudit Logs\nMigrate From\nOverview\nAirtable\nDeveloper\nUse Secrets\nSecurity & Legal\nOverview\nSecurity at Zite\nFERPA\nLegal\nData & Infrastructure\nOn this page\nOverview\nStart with the whole design\nUse Brand Kit or themes for global style\nSet fonts and colors\nCustom fonts\nGive Zite better references\nCreate images with AI\nImprove the current app\nUse Selective Edits for small changes\nCheck responsive behavior\nKeep the design readable\nA practical design workflow\nCommon design prompts\nHow to Build\nDesign tools\nCopy page\n\nMake your website, app, or internal tool feel clear, cohesive, and on-brand.\n\n​\nOverview\nGood design in Zite starts with a system, not a collection of one-off tweaks. Choose the overall style first, then refine individual sections once the app has a consistent foundation.\nIf you already have company colors, fonts, a logo, or brand rules, start with a Brand Kit. If you only need a small text, color, spacing, or layout change, use Selective Edits.\n​\nStart with the whole design\nNew builders often start by fixing the first thing that looks wrong: one button, one card, one heading, one color. That can work for small issues, but it can also make the app feel patched together.\nBefore editing individual components, decide the app’s design direction:\nWhat you have\tBest starting point\nA real company brand\tCreate or apply a Brand Kit.\nA website you want to match\tPaste the website link in chat and say what to use as reference.\nA screenshot or mockup\tUpload it with + followed by Upload an attachment.\nA page needs images\tAsk Zite to create placeholder, illustration, or marketing visuals.\nNo brand yet\tChoose a theme, then refine colors, typography, and spacing.\nDesign systems work because the same decisions repeat: the same font scale, button style, color roles, card treatment, spacing rhythm, and navigation patterns. In Zite, global theme and Brand Kit changes are the fastest way to create that consistency.\n​\nUse Brand Kit or themes for global style\nUse global design controls when the change should apply across the app. This keeps the app easier to maintain and prevents each page from drifting into a different visual style.\nUse a Brand Kit when you want Zite to reuse a brand across multiple apps. Brand Kits can include logos, icons, fonts, color palettes, button styles, card styles, and written guidelines.\nUse a theme when you want to quickly set the look of one app. Click the  swatch icon, then choose the theme or Brand Kit you want to apply.\nGlobal changes are best for:\nMain fonts and type scale\nPrimary, secondary, accent, background, and text colors\nButton shape, color, and weight\nCard, panel, and table styling\nOverall spacing and density\nLight or dark visual direction\nNavigation and page-level layout patterns\nApplying a theme from the design panel does not use credits. AI-powered design work, such as changing a design from an uploaded photo, does use credits.\n​\nSet fonts and colors\nFonts and colors should usually be configured in your theme or Brand Kit first. That keeps headings, body text, buttons, backgrounds, cards, and links consistent across the app.\nUse individual edits when a specific section needs a local adjustment, such as making one heading larger, changing a single button color"
+  },
+  {
+    "label": "31_help_brand_kit",
+    "requestedUrl": "https://www.zite.com/help/platform/how-to-build/brand-kit",
+    "finalUrl": "https://www.zite.com/help/platform/how-to-build/brand-kit",
+    "title": "Create a brand kit - Zite - Help Center",
+    "headings": [
+      "Documentation Index",
+      "Getting Started",
+      "Workspaces",
+      "How to Build",
+      "Features",
+      "Access & Sharing",
+      "Account",
+      "Migrate From",
+      "Developer",
+      "Security & Legal",
+      "On this page",
+      "Create a brand kit",
+      "​\nOverview",
+      "​\nWhat is a brand kit?",
+      "​\nBuild your brand kit",
+      "​\nKeep colors readable",
+      "​\nEdit an existing brand kit",
+      "​\nApply brand kit to an existing app"
+    ],
+    "buttons": [
+      "Search...\nCtrl K",
+      "Change theme preference",
+      "Search...",
+      "More actions",
+      "NavigationHow to BuildCreate a brand kit",
+      "Agent Modes",
+      "Customize Links",
+      "Audit Logs",
+      "Legal",
+      "Data & Infrastructure",
+      "On this page",
+      "Copy page",
+      "More actions",
+      "Copy pageCopy page",
+      "More actions",
+      "Expand image: Set up your brand screen with options to import from a website or create manually",
+      "Expand image: Screenshot 2026 06 02 At 2 52 21 PM",
+      "Expand image: Screenshot 2026 06 01 At 5 10 32 PM",
+      "Expand image: Screenshot 2026 06 02 At 2 56 24 PM",
+      "Expand image: Screenshot 2026 06 02 At 3 00 01 PM",
+      "Expand image: Screenshot 2026 06 02 At 3 12 24 PM",
+      "Expand image: Screenshot 2026 06 26 At 7 16 38 PM",
+      "Yes",
+      "No",
+      "Send message",
+      "Switch to system theme",
+      "Switch to light theme",
+      "Switch to dark theme"
+    ],
+    "inputs": [
+      {
+        "type": "TEXTAREA",
+        "placeholder": "Ask a question...",
+        "name": ""
+      },
+      {
+        "type": "TEXTAREA",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nZite - Help Center home page\nSearch...\nCtrl K\nDevelopers\nGet started\nPlatform\nDatabase\nIntegrations\nWhat's New\nGetting Started\nWelcome\nQuickstart\nSolutions Marketplace\nHire a partner\nWhat can I build?\nHow AI coding works\nApp Usage\nHow credits work\nCredit Efficiency\nGlossary\nZite FAQs\nWorkspaces\nOverview\nOrganize your workspace\nManaging users\nMCP & Agents\nContext & Integrations\nPlans & limits\nMigrate your workspaces\nHow to Build\nCreate an app\nAgent Modes\nDesign tools\nImprove my app\nCreate a Brand Kit\nWorkflows\nWorkflow Runs\nScheduled Workflows\nWebhooks\nTroubleshooting\nFeatures\nSelective Edits\nMulti-chat\nModel Selection\nNotifications and emails\nEmbed Zite app\nCustomize Links\nRecover Old Version\nPDF Generation\nCode viewing & editing\nQR Codes\nView Analytics\nAccess & Sharing\nOverview\nInternal Apps\nShare to Web\nAuthentication\nMembers & Users\nUser Data\nCustom Access Rules\nApp SSO\nUser Sync\nDuplicate, Export, and Import\nWorking with Clients\nUser Groups\nCreation permissions\nMobile\nAccount\nSubscription and Billing\nAI credit limits\nAffiliate Program\nCancel Plan\nZite Refund Policy\nAudit Logs\nMigrate From\nOverview\nAirtable\nDeveloper\nUse Secrets\nSecurity & Legal\nOverview\nSecurity at Zite\nFERPA\nLegal\nData & Infrastructure\nOn this page\nOverview\nWhat is a brand kit?\nBuild your brand kit\nKeep colors readable\nEdit an existing brand kit\nApply brand kit to an existing app\nHow to Build\nCreate a brand kit\nCopy page\n\nKeep your branding consistent by using the same colors, fonts, icons, and logo across your Zite apps.\n\n​\nOverview\nBuilding multiple apps and landing pages for the same company or brand requires staying within brand guidelines to ensure a consistent look and feel across everything you create. Without a shared system, it can be difficult to keep colors, fonts, and styling aligned across different projects.\nA brand kit helps solve this by keeping your key brand elements in one place so you can easily apply them across all apps and pages.\nBrand kits are applied per app, not per workspace. Apps in the same workspace can use the same brand kit or different ones, but you must select and apply the desired brand kit separately in each app.\nFree, Pro, and Business organizations can have one brand kit. Team and Enterprise plans include unlimited brand kits.\n​\nWhat is a brand kit?\nIt’s a centralized hub containing the visual styling elements that represent your brand. It contains the following:\nLogo: The primary visual symbol used in app headers and nav bars\nIcon: A small square logo used as favicon and app icon\nFont: The main text style\nColor Palette: Primary and secondary colors, including accents if any\nGuidelines: A set of rules that define how a brand should look and be presented\n​\nBuild your brand kit\n1\n\nChoose how to set up\n\nYou can create or access a brand kit in three places:\nIn the initial app prompt box, click the swatch icon  and select Create brand kit.\nIn the app editor, click the swatch icon , then open Theme.\nFrom Settings, open Brand kit.\nIn the popup, you can either Import your website or Create manually. For our example, let’s use Zite’s website.\nYou can change the logo or icon by clicking x and uploading or dropping a file.\n2\n\nAdd or edit your brand assets\n\nImporting will automatically capture a website’s brand information and styling.\nThis is includes the logos, color palette, font, button, and card styles. You are free to edit these however you see fit.\n3\n\nReview guidelines\n\nImporting also captures brand guidelines, specifically Visual Style, Tone of Voice, and Business Context. You can add more to this or edit them as needed.\nClick Create Brand Kit once you’ve reviewed all the details.\nThat’s it! You’ll now see your brand kit when creating an app.\n​\nKeep colors readable\nWhen Zite creates a theme from your brand kit, it checks the contrast between text and backgrounds. It adjusts text, chart colors, and focus indicators where needed while keeping your main brand colors for backgrounds and buttons.\nReview the result in your app, especially if you’ve made individual color changes. For a wider check of readability and keyboard use, ask the Accessibility agent to review it.\n​\nEdit an existing brand kit\nOn the dashboard, click your Account name followed by Settings.\nNavigate to Branding kit and click your brand to edit it.\nClick the ellipsis  to Delete a br"
+  },
+  {
+    "label": "32_help_workflows",
+    "requestedUrl": "https://www.zite.com/help/platform/workflows/overview",
+    "finalUrl": "https://www.zite.com/help/platform/workflows/overview",
+    "title": "Zite Workflows - Zite - Help Center",
+    "headings": [
+      "Documentation Index",
+      "Getting Started",
+      "Workspaces",
+      "How to Build",
+      "Features",
+      "Access & Sharing",
+      "Account",
+      "Migrate From",
+      "Developer",
+      "Security & Legal",
+      "On this page",
+      "Zite Workflows",
+      "​\nWhat are workflows?",
+      "​\nCreate workflows",
+      "​\nAvailable integrations",
+      "​\nView workflows",
+      "​\nAuthentication",
+      "Authentication",
+      "​\nWorkflow editor",
+      "​\nStreaming workflows",
+      "​\nWorkflow runs and your monthly limit",
+      "​\nExample prompts",
+      "​\nBest practices",
+      "​\nFAQ"
+    ],
+    "buttons": [
+      "Search...\nCtrl K",
+      "Change theme preference",
+      "Search...",
+      "More actions",
+      "NavigationHow to BuildZite Workflows",
+      "Agent Modes",
+      "Customize Links",
+      "Audit Logs",
+      "Legal",
+      "Data & Infrastructure",
+      "On this page",
+      "Copy page",
+      "More actions",
+      "Copy pageCopy page",
+      "More actions",
+      "Copy the contents from the code block",
+      "Expand image: Connect integration prompt",
+      "Expand image: Test run modal",
+      "Expand image: Workflows list",
+      "Expand image: Workflows list",
+      "Expand image: Workflow editor",
+      "Yes",
+      "No",
+      "Send message",
+      "Switch to system theme",
+      "Switch to light theme",
+      "Switch to dark theme"
+    ],
+    "inputs": [
+      {
+        "type": "TEXTAREA",
+        "placeholder": "Ask a question...",
+        "name": ""
+      },
+      {
+        "type": "TEXTAREA",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nZite - Help Center home page\nSearch...\nCtrl K\nDevelopers\nGet started\nPlatform\nDatabase\nIntegrations\nWhat's New\nGetting Started\nWelcome\nQuickstart\nSolutions Marketplace\nHire a partner\nWhat can I build?\nHow AI coding works\nApp Usage\nHow credits work\nCredit Efficiency\nGlossary\nZite FAQs\nWorkspaces\nOverview\nOrganize your workspace\nManaging users\nMCP & Agents\nContext & Integrations\nPlans & limits\nMigrate your workspaces\nHow to Build\nCreate an app\nAgent Modes\nDesign tools\nImprove my app\nCreate a Brand Kit\nWorkflows\nWorkflow Runs\nScheduled Workflows\nWebhooks\nTroubleshooting\nFeatures\nSelective Edits\nMulti-chat\nModel Selection\nNotifications and emails\nEmbed Zite app\nCustomize Links\nRecover Old Version\nPDF Generation\nCode viewing & editing\nQR Codes\nView Analytics\nAccess & Sharing\nOverview\nInternal Apps\nShare to Web\nAuthentication\nMembers & Users\nUser Data\nCustom Access Rules\nApp SSO\nUser Sync\nDuplicate, Export, and Import\nWorking with Clients\nUser Groups\nCreation permissions\nMobile\nAccount\nSubscription and Billing\nAI credit limits\nAffiliate Program\nCancel Plan\nZite Refund Policy\nAudit Logs\nMigrate From\nOverview\nAirtable\nDeveloper\nUse Secrets\nSecurity & Legal\nOverview\nSecurity at Zite\nFERPA\nLegal\nData & Infrastructure\nOn this page\nWhat are workflows?\nCreate workflows\nAvailable integrations\nView workflows\nAuthentication\nWorkflow editor\nStreaming workflows\nWorkflow runs and your monthly limit\nExample prompts\nBest practices\nFAQ\nHow to Build\nZite Workflows\nCopy page\n\nAdd backend logic to your Zite apps—connect to databases, send emails, run AI, and more.\n\n​\nWhat are workflows?\nWorkflows are the backend logic that powers your Zite apps. They let you:\nConnect to databases: Read and write data from Zite Database, Airtable, Google Sheets, and more\nSend messages: Trigger Slack notifications or send emails\nRun AI operations: Generate text, images, or structured data with OpenAI\nProcess data: Transform, filter, and combine data from multiple sources\nCall external APIs: Connect to third-party services\nWorkflows are sometimes called endpoints or API routes.\n​\nCreate workflows\n1\n\nDescribe the logic\n\nTell Zite what you want the workflow to do. For example:\nCreate a workflow that searches for products by name \nand returns matching results with their prices.\n\n2\n\nConnect integrations\n\nIf the workflow needs access to a service (like Slack or Airtable), Zite will prompt you to + Connect it.\n3\n\nReview and test\n\nZite generates the workflow and shows you a visual preview of what it does. Use Test run to verify it works as expected. More info here.\nFor authenticated workflows, choose which user context to test with\nBe specific in your prompts. Instead of “save user data,” try “when a user submits the form, create a new record in the Contacts table with their name and email.”\n​\nAvailable integrations\nWorkflows can connect to all Zite integrations.\nBrowse integrations at zite.com/integrations.\nLearn how to link your accounts and use integrations in your app here.\n​\nView workflows\nClick Workflows see all workflows in your app. Each workflow shows a name, its description, apps it uses (Database, Slack, OpenAI, etc.), and who has access.\nClick any workflow to open the editor, where you can view the code, see a visual preview, or check the run history.\nName - The workflow’s identifier\nDescription - What the workflow does\nIntegration icons - Which services the workflow uses\n​\nAuthentication\nWorkflows can require users to be logged in. When authentication is enabled:\nOnly logged-in users can trigger the workflow\nThe workflow has access to the current user’s info (ID, email, profile data)\nRequests from non-logged-in users are automatically rejected\nAuthentication\nSet up authentication for your app.\n​\nWorkflow editor\nThe workflow editor has three tabs:\nTab\tDescription\nPreview\tVisual diagram showing the workflow’s steps\nCode\tThe TypeScript code powering the workflow\nHistory\tExecution logs for debugging (learn more)\nYou don’t need to write or understand code to use Zite Workflows. The code tab is there if you want to inspect or manually edit the logic.\n​\nStreaming workflows\nFor real-time AI chat experiences, workflows can stream responses back to the user as they’re generated, just like ChatGPT.\nAsk Zite to “create a chat interface” or “add an AI assistant,” and it will set up a streaming workflow"
+  },
+  {
+    "label": "33_help_code_editing",
+    "requestedUrl": "https://www.zite.com/help/platform/how-to-build/code-viewing-editing",
+    "finalUrl": "https://www.zite.com/help/platform/how-to-build/code-viewing-editing",
+    "title": "Code viewing & editing - Zite - Help Center",
+    "headings": [
+      "Documentation Index",
+      "Getting Started",
+      "Workspaces",
+      "How to Build",
+      "Features",
+      "Access & Sharing",
+      "Account",
+      "Migrate From",
+      "Developer",
+      "Security & Legal",
+      "On this page",
+      "Code viewing & editing",
+      "​\nOpen code view",
+      "​\nUnderstand the monorepo",
+      "​\nView and edit code",
+      "​\nReview code history",
+      "​\nBest practices"
+    ],
+    "buttons": [
+      "Search...\nCtrl K",
+      "Change theme preference",
+      "Search...",
+      "More actions",
+      "NavigationFeaturesCode viewing & editing",
+      "Agent Modes",
+      "Customize Links",
+      "Audit Logs",
+      "Legal",
+      "Data & Infrastructure",
+      "On this page",
+      "Copy page",
+      "More actions",
+      "Copy pageCopy page",
+      "More actions",
+      "Expand image: Zite Code view showing multiple apps in the project file tree and App.tsx open in the editor",
+      "Expand image: Version history Code tab showing changed files and a side-by-side diff",
+      "Yes",
+      "No",
+      "Send message",
+      "Switch to system theme",
+      "Switch to light theme",
+      "Switch to dark theme"
+    ],
+    "inputs": [
+      {
+        "type": "TEXTAREA",
+        "placeholder": "Ask a question...",
+        "name": ""
+      },
+      {
+        "type": "TEXTAREA",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nZite - Help Center home page\nSearch...\nCtrl K\nDevelopers\nGet started\nPlatform\nDatabase\nIntegrations\nWhat's New\nGetting Started\nWelcome\nQuickstart\nSolutions Marketplace\nHire a partner\nWhat can I build?\nHow AI coding works\nApp Usage\nHow credits work\nCredit Efficiency\nGlossary\nZite FAQs\nWorkspaces\nOverview\nOrganize your workspace\nManaging users\nMCP & Agents\nContext & Integrations\nPlans & limits\nMigrate your workspaces\nHow to Build\nCreate an app\nAgent Modes\nDesign tools\nImprove my app\nCreate a Brand Kit\nWorkflows\nWorkflow Runs\nScheduled Workflows\nWebhooks\nTroubleshooting\nFeatures\nSelective Edits\nMulti-chat\nModel Selection\nNotifications and emails\nEmbed Zite app\nCustomize Links\nRecover Old Version\nPDF Generation\nCode viewing & editing\nQR Codes\nView Analytics\nAccess & Sharing\nOverview\nInternal Apps\nShare to Web\nAuthentication\nMembers & Users\nUser Data\nCustom Access Rules\nApp SSO\nUser Sync\nDuplicate, Export, and Import\nWorking with Clients\nUser Groups\nCreation permissions\nMobile\nAccount\nSubscription and Billing\nAI credit limits\nAffiliate Program\nCancel Plan\nZite Refund Policy\nAudit Logs\nMigrate From\nOverview\nAirtable\nDeveloper\nUse Secrets\nSecurity & Legal\nOverview\nSecurity at Zite\nFERPA\nLegal\nData & Infrastructure\nOn this page\nOpen code view\nUnderstand the monorepo\nView and edit code\nReview code history\nBest practices\nFeatures\nCode viewing & editing\nCopy page\n\nView, edit, download, run, and review the code for your Zite project.\n\nZite projects use a monorepo: one codebase contains every app in the workspace, along with shared packages and project configuration. When you add an app to an existing workspace, Zite adds it to the same monorepo instead of creating a separate codebase.\nCode view lets you browse the entire project, edit supported files, create files, run the workspace locally, and review the history of code changes.\nDirect code editing is intended for seasoned developers. For most changes, work with the Zite agent so it can update related files and keep the project consistent.\n​\nOpen code view\nOpen a project.\nClick the project or app name in the top-left corner.\nUnder Workspace, select Code.\nThe file tree appears on the left. Select a file to open it in the editor, use the search field to find a file by name, or expand folders to explore the project.\n​\nUnderstand the monorepo\nAll apps in a workspace are bundled into the same project codebase. The file tree commonly includes:\nPath\tWhat it contains\napps/<app-name>\tThe source code and configuration for an individual app. Each additional app gets its own folder here.\npackages/<package-name>\tComponents or other code shared by apps in the workspace.\nProject root\tWorkspace-level packages, TypeScript configuration, Zite configuration, and other shared files.\nBefore changing a shared package, check which apps use it. A shared-code change can affect more than one app.\n​\nView and edit code\nClick a file in the tree to open it, then edit the code directly. Files with a lock icon are managed by Zite and cannot be edited from Code view.\nDirect edits are most useful when you know which file needs to change and are comfortable with React, TypeScript, and the project structure. For changes that cross multiple files or apps, ask the Zite agent to make the update instead.\nTo add a file, click the new-file icon beside the search field, then enter its name and extension. Follow the conventions already used in that app or package.\nIf you are unsure what a file does, use Explain file with AI before editing it. Zite opens Chat mode with the selected file as context, so you can ask follow-up questions without changing the project.\n​\nReview code history\nZite keeps a Git-backed history of meaningful project changes. Use it to connect code updates to prompts or agent actions and see exactly which files changed.\nClick History in the Code view toolbar.\nSelect a change from the timeline.\nChoose Code to see the files changed and a side-by-side diff.\nUse the project selector to review changes across the entire project or within an individual app.\nTo return the project to an earlier working state, see Restore an older version.\n​\nBest practices\nUse the Zite agent for changes that affect multiple files, apps, or shared packages.\nCheck whether code under packages is used by other apps before editing it.\nKeep direct edits small and focu"
+  },
+  {
+    "label": "34_help_access_control",
+    "requestedUrl": "https://www.zite.com/help/platform/access/overview",
+    "finalUrl": "https://www.zite.com/help/platform/access/overview",
+    "title": "Manage Zite app access - Zite - Help Center",
+    "headings": [
+      "Documentation Index",
+      "Getting Started",
+      "Workspaces",
+      "How to Build",
+      "Features",
+      "Access & Sharing",
+      "Account",
+      "Migrate From",
+      "Developer",
+      "Security & Legal",
+      "On this page",
+      "Manage Zite app access",
+      "​\nChoose the right type of access",
+      "​\nLearn more",
+      "Members & Users",
+      "Internal Apps",
+      "User Groups",
+      "Share to Web",
+      "Authentication",
+      "Notifications and emails"
+    ],
+    "buttons": [
+      "Search...\nCtrl K",
+      "Change theme preference",
+      "Search...",
+      "More actions",
+      "NavigationAccess & SharingManage Zite app access",
+      "Agent Modes",
+      "Customize Links",
+      "Audit Logs",
+      "Legal",
+      "Data & Infrastructure",
+      "On this page",
+      "Copy page",
+      "More actions",
+      "Copy pageCopy page",
+      "More actions",
+      "Yes",
+      "No",
+      "Send message",
+      "Switch to system theme",
+      "Switch to light theme",
+      "Switch to dark theme"
+    ],
+    "inputs": [
+      {
+        "type": "TEXTAREA",
+        "placeholder": "Ask a question...",
+        "name": ""
+      },
+      {
+        "type": "TEXTAREA",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nZite - Help Center home page\nSearch...\nCtrl K\nDevelopers\nGet started\nPlatform\nDatabase\nIntegrations\nWhat's New\nGetting Started\nWelcome\nQuickstart\nSolutions Marketplace\nHire a partner\nWhat can I build?\nHow AI coding works\nApp Usage\nHow credits work\nCredit Efficiency\nGlossary\nZite FAQs\nWorkspaces\nOverview\nOrganize your workspace\nManaging users\nMCP & Agents\nContext & Integrations\nPlans & limits\nMigrate your workspaces\nHow to Build\nCreate an app\nAgent Modes\nDesign tools\nImprove my app\nCreate a Brand Kit\nWorkflows\nWorkflow Runs\nScheduled Workflows\nWebhooks\nTroubleshooting\nFeatures\nSelective Edits\nMulti-chat\nModel Selection\nNotifications and emails\nEmbed Zite app\nCustomize Links\nRecover Old Version\nPDF Generation\nCode viewing & editing\nQR Codes\nView Analytics\nAccess & Sharing\nOverview\nInternal Apps\nShare to Web\nAuthentication\nMembers & Users\nUser Data\nCustom Access Rules\nApp SSO\nUser Sync\nDuplicate, Export, and Import\nWorking with Clients\nUser Groups\nCreation permissions\nMobile\nAccount\nSubscription and Billing\nAI credit limits\nAffiliate Program\nCancel Plan\nZite Refund Policy\nAudit Logs\nMigrate From\nOverview\nAirtable\nDeveloper\nUse Secrets\nSecurity & Legal\nOverview\nSecurity at Zite\nFERPA\nLegal\nData & Infrastructure\nOn this page\nChoose the right type of access\nLearn more\nAccess & Sharing\nManage Zite app access\nCopy page\n\nFind the right way to manage editors, internal app members, external users, groups, and roles.\n\n​\nChoose the right type of access\nIf someone needs to…\tManage them as…\tTheir access covers…\nBuild or manage the workspace\tEditor\tThe database and every app\nUse one internal app\tInternal app member\tUse Access for that app\nUse an app from outside the organization\tExternal user\tThe app they signed up for\nUser Groups grant access to several organization members at once. Roles control database permissions by table and action.\n​\nLearn more\nMembers & Users\nOpen the Users area and manage editors or the people who use each app.\nInternal Apps\nGive organization members Use Access to an internal app.\nUser Groups\nGrant access and permissions to several organization members at once.\nShare to Web\nMake an app available to people outside your organization.\nAuthentication\nChoose how external users sign in and who can sign up.\nNotifications and emails\nCustomize invitation and sign-in emails, branding, and sender.\nLast modified on October 9, 2026\n\nWas this page helpful?\n\nYes\nNo\nView Analytics\nInternal Apps\nZite - Help Center home page\n\nGeneral\n\nHome\nPricing\nCareers\nBlog\nEnterprise\nReport abuse\n\nProduct\n\nApps\nDatabases\nIntegrations\nFillout\n\nResources\n\nHelp Center\nCustomers\nPartners\nMarketplace\nSpreadsheet to App\nStatus\nDeveloper docs\n® 2026 Restly, Inc. DBA Zite"
+  },
+  {
+    "label": "35_help_audit_logs",
+    "requestedUrl": "https://www.zite.com/help/platform/account/audit-logs",
+    "finalUrl": "https://www.zite.com/help/platform/account/audit-logs",
+    "title": "Page Not Found",
+    "headings": [
+      "Documentation Index",
+      "Page Not Found"
+    ],
+    "buttons": [
+      "Search...\nCtrl K",
+      "Change theme preference",
+      "Search...",
+      "More actions",
+      "NavigationPage Not Found",
+      "Send message",
+      "Switch to system theme",
+      "Switch to light theme",
+      "Switch to dark theme"
+    ],
+    "inputs": [
+      {
+        "type": "TEXTAREA",
+        "placeholder": "Ask a question...",
+        "name": ""
+      },
+      {
+        "type": "TEXTAREA",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nZite - Help Center home page\nSearch...\nCtrl K\nDevelopers\nGet started\n404\nPage Not Found\nWe couldn't find the page. Maybe you were looking for one of these pages below?\nAudit logs\nAudit log event types\nGlossary"
+  },
+  {
+    "label": "36_help_database",
+    "requestedUrl": "https://www.zite.com/help/database/overview",
+    "finalUrl": "https://www.zite.com/help/database/overview",
+    "title": "Zite Database - Zite - Help Center",
+    "headings": [
+      "Documentation Index",
+      "Getting Started",
+      "Configure Database",
+      "Manage Data",
+      "Access & Sharing",
+      "Automations",
+      "Tips",
+      "Zite MCP",
+      "API Reference",
+      "On this page",
+      "Zite Database",
+      "​\nWhat’s included",
+      "​\nPerformance",
+      "​\nManaging your database",
+      "​\nPricing",
+      "​\nLearn more",
+      "Import Data",
+      "Database Agent",
+      "Connect with MCP",
+      "AI Fields",
+      "API Reference",
+      "Field Types"
+    ],
+    "buttons": [
+      "Search...\nCtrl K",
+      "Change theme preference",
+      "Search...",
+      "More actions",
+      "NavigationGetting StartedZite Database",
+      "On this page",
+      "Copy page",
+      "More actions",
+      "Copy pageCopy page",
+      "More actions",
+      "Yes",
+      "No",
+      "Send message",
+      "Switch to system theme",
+      "Switch to light theme",
+      "Switch to dark theme"
+    ],
+    "inputs": [
+      {
+        "type": "TEXTAREA",
+        "placeholder": "Ask a question...",
+        "name": ""
+      },
+      {
+        "type": "TEXTAREA",
+        "placeholder": "",
+        "name": ""
+      }
+    ],
+    "bodyText": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nZite - Help Center home page\nSearch...\nCtrl K\nDevelopers\nGet started\nPlatform\nDatabase\nIntegrations\nWhat's New\nGetting Started\nOverview\nCreate a Database\nImport Data\nDatabase Agent\nZite Database FAQs\nConfigure Database\nManage Fields\nManage Views\nAI Fields\nFormulas\nLink Records\nLookup Field\nRollup Field\nUser Field\nAuto-Generate IDs\nManage Data\nDuplicate Data\nExport Database\nDelete Records\nBackup and Restore\nAccess & Sharing\nManage Access\nAutomations\nOverview\nApp schedules and webhooks\nZapier\nRelay.app\nn8n\nTips\nQuick Fixes\nZite MCP\nOverview\nConnecting to Zite MCP\nAPI Reference\nDatabase API\nOn this page\nWhat’s included\nPerformance\nManaging your database\nPricing\nLearn more\nGetting Started\nZite Database\nCopy page\n\nZite Database is an agent-ready database built to power multiple apps from one shared source of truth. Create, manage, and scale your data with agents in Zite or through MCP.\n\nUse the built-in Database Agent to create tables, organize data, analyze records, and make updates directly in Zite.\nYou can also connect external AI tools through Zite MCP, giving agents secure read and write access to your databases. Collaborate with your whole team without seat limits, and scale to millions of records as your apps grow.\n​\nWhat’s included\nDatabase Agent - Build tables, organize data, analyze records, and make updates with an agent inside Zite\nMCP access - Let AI tools securely query and maintain your databases through Zite MCP\nAI fields - Automatically categorize, summarize, score, and enrich every record\n20+ field types - Text, numbers, dates, files, linked records, and more\nAirtable migration - Move your existing Airtable bases to Zite\nData import/export - Import data from Airtable, Google Sheets, or CSV, and export it for analysis\nREST API + Webhooks - Programmatic access with up to 30 API requests per second, per database\nLinked records - Create relationships between tables\nBulk operations - Update or delete multiple records at once\nGranular permissions - Control who can view or edit your data\nUndo/redo - Easily revert changes\nMultiple views - Organize and filter your data\n​\nPerformance\nZite Database is built for speed:\n50 internal Zite Database requests per second - Support non-API activity, per database\nMillions of records - Scale your database as your app grows\nFast queries - Get results instantly, even with complex filters\n​\nManaging your database\nAccess the full database interface:\nAdd or remove fields\nCreate new tables\nMigrate existing Airtable bases\nImport data from Airtable, Google Sheets, or CSV\nAdd AI fields that generate and maintain values automatically\nBulk edit records\nSet up webhooks\nUse the REST API\nOnce a database has 8 or more tables, a button at the start of the table tabs opens a searchable list of all tables.\n​\nPricing\nZite Database includes unlimited seats on every plan, including the free tier. There are fixed pricing tiers based on data storage, view pricing here.\n​\nLearn more\nImport Data\nMove your existing data into Zite\nDatabase Agent\nBuild, maintain, and understand your database with an agent\nConnect with MCP\nGive external AI tools secure access to your Zite databases\nAI Fields\nGenerate and maintain field values automatically with AI\nAPI Reference\nComplete REST API documentation\nField Types\nExplore all available field types\nLast modified on October 9, 2026\n\nWas this page helpful?\n\nYes\nNo\nCreate a Database\nZite - Help Center home page\n\nGeneral\n\nHome\nPricing\nCareers\nBlog\nEnterprise\nReport abuse\n\nProduct\n\nApps\nDatabases\nIntegrations\nFillout\n\nResources\n\nHelp Center\nCustomers\nPartners\nMarketplace\nSpreadsheet to App\nStatus\nDeveloper docs\n® 2026 Restly, Inc. DBA Zite"
+  }
+]

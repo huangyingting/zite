@@ -1,0 +1,172 @@
+# Zite - Help Center
+
+> Browse help articles and customer support for Zite. Build business software in minutes
+
+- [Welcome to Zite](https://zite.com/help/platform/getting-started/overview.md): Describe the app you want to build, and Zite helps turn it into working software with the data, workflows, and access controls you need.
+- [Quickstart](https://zite.com/help/platform/getting-started/quickstart.md): Getting started is as simple as describing your app idea. Zite helps turn that prompt into a working app you can refine, connect to data, and share.
+- [Solutions Marketplace](https://zite.com/help/platform/features/marketplace/overview.md): Start with ready-made business apps and systems or share your own solution with others.
+- [Hire an approved partner](https://zite.com/help/platform/getting-started/hire-a-partner.md): Work with a Zite Partner to plan, build, and deliver client-ready apps.
+- [What can I build with Zite?](https://zite.com/help/platform/getting-started/what-can-i-build.md): Learn which connected business systems are a good fit for Zite, and when another product may be better.
+- [How AI coding works](https://zite.com/help/platform/getting-started/how-ai-coding-works.md): Learn how AI coding works under the hood and how Zite helps you build apps using natural language
+- [App Usage](https://zite.com/help/platform/getting-started/usage.md): Understand how Zite charges for app usage through credits and workflow runs.
+- [How credits work](https://zite.com/help/platform/getting-started/credits.md): Learn what uses Zite credits, when credits reset, and how the Free plan's monthly credits and daily message limit work together.
+- [Use credits efficiently](https://zite.com/help/platform/getting-started/credit-efficiency.md): Learn how to choose the right mode, model, chat context, and prompt style so Zite can build with fewer used credits.
+- [Glossary](https://zite.com/help/platform/getting-started/glossary.md): Definitions for common Zite, AI app building, projects, code, data, app workflows, database permissions, and UI terms.
+- [Zite FAQs](https://zite.com/help/platform/getting-started/faq.md): Common questions about Zite projects, apps, databases, app workflows, database permissions, and billing.
+- [Overview](https://zite.com/help/platform/workspaces/overview.md): Bring your people, apps, and context together in one place to build and run the systems your team relies on.
+- [Organize your workspace](https://zite.com/help/platform/workspaces/organize-your-workspace.md): Organize your apps and forms, group workspaces into sections, and personalize your workspace list.
+- [Managing users](https://zite.com/help/platform/workspaces/users-and-roles.md): Manage workspace editors and the people who can use each app.
+- [MCP & Agents](https://zite.com/help/platform/workspaces/mcp-and-agents.md): Connect your AI agent to query data, build apps, and manage your Zite workspace.
+- [Context & Integrations](https://zite.com/help/platform/workspaces/context-and-integrations.md): Add business context for your agent and manage integrations across your workspace.
+- [Plans & limits](https://zite.com/help/platform/workspaces/plans-and-limits.md): Understand workspace allowances for each plan and how limits apply to your organization.
+- [Migrate to Workspaces 2.0](https://zite.com/help/platform/workspaces/migrate-your-workspaces.md): Move your Zite apps to Workspaces 2.0 without rebuilding your app, data, or access.
+- [Create an app](https://zite.com/help/platform/how-to-build/creating-an-app.md): Learn how to create a Zite app in a new workspace, import data, match your brand, connect integrations, and write an effective starting prompt.
+- [Agent Modes](https://zite.com/help/platform/how-to-build/agent-modes/overview.md): Learn how Zite's Auto, Build, Plan, and Chat modes help you plan, create, and ask questions.
+- [Auto mode](https://zite.com/help/platform/how-to-build/agent-modes/auto-mode.md): Use Auto mode when you want Zite to keep building like Build, with fewer approval clicks.
+- [Build mode](https://zite.com/help/platform/how-to-build/agent-modes/build-mode.md): Use Build mode when you want Zite to actively create, update, or delete parts of your app.
+- [Plan mode](https://zite.com/help/platform/how-to-build/agent-modes/plan-mode.md): Use Plan mode to steer the direction of an app before Zite starts building.
+- [Chat mode](https://zite.com/help/platform/how-to-build/agent-modes/chat-mode.md): Use Chat mode to ask questions and get suggestions without changing your app.
+- [Design tools](https://zite.com/help/platform/how-to-build/design-tools.md): Make your website, app, or internal tool feel clear, cohesive, and on-brand.
+- [Improve my app](https://zite.com/help/platform/how-to-build/improve-my-app.md): Run automated review, design, and accessibility passes on your Zite app.
+- [Create a brand kit](https://zite.com/help/platform/how-to-build/brand-kit.md): Keep your branding consistent by using the same colors, fonts, icons, and logo across your Zite apps.
+- [Zite Workflows](https://zite.com/help/platform/workflows/overview.md): Add backend logic to your Zite apps—connect to databases, send emails, run AI, and more.
+- [Workflow Runs](https://zite.com/help/platform/workflows/workflow-run-history.md): Understand workflow run usage and view, filter, and debug workflow executions with detailed logs.
+- [Scheduled Workflows](https://zite.com/help/platform/how-to-build/scheduled-workflows.md): Run Zite workflows automatically at a future time or on a recurring schedule.
+- [Configuring Webhooks](https://zite.com/help/platform/how-to-build/webhooks.md): Use webhooks to trigger Zite workflows when something happens in another app or service.
+- [Troubleshoot your app](https://zite.com/help/platform/how-to-build/troubleshooting.md): Diagnose common app, workflow, database, and building issues in Zite.
+- [Quick changes with selective edits](https://zite.com/help/platform/basics/selective-edits.md): Customize your app's UI. Edit the typography, color palette, and other elements on your Zite.
+- [Manage context with Multi-chat](https://zite.com/help/platform/basics/multi-chat.md): Use separate chats to control context, keep Zite focused, and manage credit usage while building.
+- [Model selection](https://zite.com/help/platform/basics/model-selection.md): Choose the right AI model tier for your task: Zite Mini, Zite Pro, Zite Max, or Zite Max Fast.
+- [Notifications and emails](https://zite.com/help/platform/access/notifications.md): Brand, send, and edit invitation, sign-in, and workflow emails from App settings.
+- [Embed Zite app](https://zite.com/help/platform/basics/embedding.md): Embed your Zite app on websites, docs, wikis, dashboards, portals, and internal tools.
+- [Customize app links](https://zite.com/help/platform/basics/customize-links.md): Personalize your app links with a subdomain or domain that matches your branding. Plus, edit the preview that shows up when sharing your link.
+- [Connect a Godaddy domain to your app](https://zite.com/help/platform/basics/customize-links/connect-godaddy.md): Point a domain you bought from Godaddy to your Zite app by adding the required DNS records.
+- [Connect a Cloudflare domain to your app](https://zite.com/help/platform/basics/customize-links/connect-cloudflare.md): Point a domain managed in Cloudflare to your Zite app by adding the required DNS records.
+- [Restore older Zite app version](https://zite.com/help/platform/basics/history.md): View version history and mass-undo recent changes.
+- [Generate PDFs from your app](https://zite.com/help/platform/basics/pdf-generation.md): Turn app data into branded PDFs for quotes, contracts, invoices, reports, certificates, and other business documents.
+- [Code viewing & editing](https://zite.com/help/platform/how-to-build/code-viewing-editing.md): View, edit, download, run, and review the code for your Zite project.
+- [Scan QR codes in your app](https://zite.com/help/platform/basics/qr-codes.md): Learn how Zite apps scan QR codes and barcodes with the device camera to look up records and ingest data into your workflows.
+- [Track Zite app analytics](https://zite.com/help/platform/basics/analytics.md)
+- [Manage Zite app access](https://zite.com/help/platform/access/overview.md): Find the right way to manage editors, internal app members, external users, groups, and roles.
+- [Internal apps](https://zite.com/help/platform/access/internal-apps.md): Learn who can open an internal app and how to manage Use Access.
+- [Share Zite app to web](https://zite.com/help/platform/access/share-to-web.md): Make your Zite app publicly accessible to people outside your organization.
+- [Authentication for Public Zite apps](https://zite.com/help/platform/access/authentication.md): Choose how people sign in, control who can sign up, and customize your app's login screen.
+- [Manage workspace editors and app users](https://zite.com/help/platform/access/manage-users.md): Manage workspace editors, internal app members, and external users from one place.
+- [Store extra data about your users](https://zite.com/help/platform/access/user-data.md): Relate database records to editors, internal app members, and external users in your workspace.
+- [Custom access rules](https://zite.com/help/platform/access/custom-access-rules.md): Let another system decide who can sign up, who can sign in, and who stays signed in to your Zite app.
+- [Single sign-on for your app](https://zite.com/help/platform/access/sso.md): Require users to sign in with your organization's SSO identity provider before accessing your Zite app.
+- [What happened to user sync](https://zite.com/help/platform/access/user-sync.md): Learn how user sync changed in Zite 2.0 and what happens to migrated apps.
+- [Duplicate, Export, and Import Workspaces](https://zite.com/help/platform/access/duplicate-export-and-import.md): Duplicate an app or a whole workspace, or export and import a complete workspace between organizations.
+- [Working with Clients](https://zite.com/help/platform/access/working-with-clients.md): Tips for using Zite when building for clients as an agency or consultant.
+- [User Groups](https://zite.com/help/platform/access/user-groups.md): Grant workspace, app, form, and database permissions to several organization members at once.
+- [Creation permissions](https://zite.com/help/platform/access/creation-permissions.md): Choose who in your organization can create apps, forms, and workspaces.
+- [Mobile settings for Zite apps](https://zite.com/help/platform/access/mobile.md): Configure your Zite app so visitors can add it to their phone's home screen and open it like a mobile app.
+- [Subscription and Billing](https://zite.com/help/platform/account/subscription.md): Manage your Zite subscription, compare usage limits, and review organization billing and usage.
+- [AI credit limits](https://zite.com/help/platform/account/ai-credit-limits.md): Set how many credits each person in your organization can spend building with AI.
+- [Affiliate program](https://zite.com/help/platform/account/affiliate-program.md): Share Fillout and Zite with your network to earn a 30% recurring commission for up to 12 months per customer on paid plans. Your referrals get 50% bonus Zite daily messages when they sign up.
+- [Cancel your Zite plan](https://zite.com/help/platform/account/cancel-account.md): Cancel your Zite apps subscription.
+- [Zite Refund Policy](https://zite.com/help/platform/account/refund-policy.md)
+- [Audit logs](https://zite.com/help/platform/audit-logs/overview.md): Track activity across your Zite organization — database changes, logins, permission updates, and more.
+- [Audit log event types](https://zite.com/help/platform/audit-logs/event-types.md): A complete reference of every event tracked in Zite audit logs, including descriptions and payload fields.
+- [Migrate to Zite](https://zite.com/help/platform/migrate-from/overview.md): Open the migration hub, pick the tool you are leaving, and follow a guided path to bring your data, apps, or automations into Zite.
+- [Migrate from Airtable to Zite](https://zite.com/help/platform/migrate-from/airtable.md): Move an Airtable base, its records, and the interfaces your team uses into Zite.
+- [Zite Secrets](https://zite.com/help/platform/api/secrets.md): Paste API keys and other private values so your apps can use them without showing those values to the people using the app.
+- [Security & Legal](https://zite.com/help/security-and-legal.md): Details on Zite's security & legal practices.
+- [Security at Zite](https://zite.com/help/security.md): This page describes the administrative, technical and physical safeguards in place at Zite as well as SOC 2 Type 2 compliance.
+- [FERPA and student data privacy](https://zite.com/help/ferpa.md): How Zite and Fillout help schools and educational institutions protect student data and meet their FERPA obligations.
+- [Privacy policy](https://zite.com/help/privacy-policy.md): Zite’s privacy policy.
+- [Terms of Service](https://zite.com/help/terms-of-service.md): Fillout’s Terms of Service.
+- [Fair use policy](https://zite.com/help/fair-use-policy.md): Details on our usage limits, custom plans and how they help us maintain a reliable and efficient service for all users.
+- [Subprocessors](https://zite.com/help/subprocessors.md): Zite's subprocessors.
+- [Zite Database](https://zite.com/help/database/overview.md): Zite Database is an agent-ready database built to power multiple apps from one shared source of truth. Create, manage, and scale your data with agents in Zite or through MCP.
+- [Create a database](https://zite.com/help/database/getting-started/create-a-database.md): Learn how to start a Zite Database project from scratch or by importing existing data.
+- [Import data to your Zite database](https://zite.com/help/database/getting-started/import-data.md): Import existing data into a new Zite workspace or an existing database.
+- [Database Agent](https://zite.com/help/database/getting-started/database-agent.md): Use the AI agent in Zite Database to create tables, ask questions, analyze records, update fields, and connect integrations.
+- [Zite Database FAQs](https://zite.com/help/database/getting-started/faqs.md): Common questions about how the database works and its features.
+- [Manage database fields](https://zite.com/help/database/configure-database/manage-fields.md): Edit, convert, delete, and adjust your Zite database fields or columns.
+- [Manage database views](https://zite.com/help/database/configure-database/manage-views.md): Sort, filter, hide, and customize how records appear in your Zite database.
+- [AI Fields](https://zite.com/help/database/configure-database/ai-fields.md): Automatically fill in database fields using AI. Categorize, score, summarize, extract information, and more — every row gets filled for you.
+- [Formulas](https://zite.com/help/database/configure-database/formulas.md): Complete reference for all formula functions available in formula fields.
+- [Link Zite database records](https://zite.com/help/database/configure-database/link-records.md): Link records across tables to assign or reference existing records, keeping your data organized and consistent.
+- [Pull data with a lookup field](https://zite.com/help/database/configure-database/lookup-field.md): Automatically display fields from related records without copying them manually.
+- [Summarize linked records with a rollup field](https://zite.com/help/database/configure-database/rollup-field.md): Automatically summarize values from linked records, such as totals, averages, and counts.
+- [Link records to people with a user field](https://zite.com/help/database/configure-database/user-field.md): Attach records to the people who use your app or workspace, so you can show each person their own data.
+- [Auto-generate IDs for database records](https://zite.com/help/database/configure-database/auto-generate-ids.md): Automatically create unique ID numbers for each new record on your Zite Database.
+- [Duplicate data](https://zite.com/help/database/manage-data/duplicate.md): Duplicate a table or an entire database to use a starting point.
+- [Export database](https://zite.com/help/database/manage-data/export.md): Keep an offline copy of your data or upload it in BI platforms to extract insights and help your team understand performance and patterns.
+- [Delete Records](https://zite.com/help/database/manage-data/delete-records.md): Remove records from your database, individually or in bulk.
+- [Backup and Restore](https://zite.com/help/database/manage-data/backup-and-restore.md): Create database backups and restore your data to a saved version or recent point in time.
+- [Manage database access](https://zite.com/help/database/access/access.md): Add workspace editors who can work with the database and every app in the workspace.
+- [Automate Zite Database](https://zite.com/help/database/automations/overview.md): Connect Zite Database to thousands of apps with automation tools like Zapier and Relay.app.
+- [App schedules and webhooks](https://zite.com/help/database/automations/zite-automations.md): Use scheduled workflows and webhooks to run Zite workflows automatically.
+- [Connect Zite Database to Zapier](https://zite.com/help/database/automations/zapier.md): Automate workflows by connecting your Zite database tables to thousands of apps with Zapier.
+- [Connect Zite Database to Relay.app](https://zite.com/help/database/automations/relay.md): Automate workflows by connecting your Zite database tables to other apps with Relay.app.
+- [Connect Zite Database to n8n](https://zite.com/help/database/automations/n8n.md): Automate workflows by connecting your Zite database tables to thousands of apps, data sources, and services with n8n
+- [Quick fixes](https://zite.com/help/database/tips/quick-fixes.md): Quickly troubleshoot missing records, hidden fields, import issues, and connected app data in your Zite database.
+- [Overview](https://zite.com/help/database/mcp/mcp-overview.md): Build, query, and manage Zite from your favorite AI tool.
+- [Connecting to Zite MCP](https://zite.com/help/database/mcp/connection-overview.md): Connect your AI agent to Zite MCP
+- [Database API](https://zite.com/help/database/api.md): Use the Zite REST API and TypeScript SDK to read and manage databases, tables, fields, records, and webhooks.
+- [Connect Zite app to an integration](https://zite.com/help/integrations/overview.md): Choose where to set up an integration—organization, workspace, or app—and what each level changes.
+- [Build an app with Google Sheets](https://zite.com/help/integrations/google-sheets.md): Build an app that reads and updates your Google Sheets data.
+- [Send and manage emails with Gmail](https://zite.com/help/integrations/gmail.md): Read, organize, and send Gmail messages from your Zite app.
+- [Build apps that manage files with Google Drive](https://zite.com/help/integrations/google-drive.md): Let users browse, search, and upload Google Drive files from your Zite app.
+- [Integrate with Google Forms](https://zite.com/help/integrations/google-forms.md): Read your Google Forms and their responses in a Zite app. This connection is read-only.
+- [Get insights on your app with Google Analytics](https://zite.com/help/integrations/google-analytics.md): Track page visits and important actions in your published Zite app with Google Analytics.
+- [Collect app bookings with Google Calendar](https://zite.com/help/integrations/google-calendar.md): Show availability and create or update Google Calendar events from your Zite app.
+- [Integrate maps with Google Maps](https://zite.com/help/integrations/google-maps.md): Add maps, location search, and address suggestions to your Zite app.
+- [Integrate with Google Docs](https://zite.com/help/integrations/google-docs.md): Connect Google Docs to your Zite app to create and update documents, or display content from existing ones.
+- [Build an app with Microsoft Excel](https://zite.com/help/integrations/excel.md): Turn an Excel or CSV file into a Zite app for tracking and managing data.
+- [Create apps that notify with Teams](https://zite.com/help/integrations/teams.md): Send messages to Microsoft Teams when people take actions in your Zite app.
+- [Manage emails and events with Outlook](https://zite.com/help/integrations/outlook.md): Read and manage Outlook email and calendar events from your Zite app.
+- [Create apps that manage files with OneDrive](https://zite.com/help/integrations/onedrive.md): Let users browse, download, and upload OneDrive files through your Zite app.
+- [Integrate with Airtable](https://zite.com/help/integrations/airtable.md): Connect Airtable to your Zite app to display, create, and update records in your Airtable base.
+- [Search and enrich contacts with Apollo](https://zite.com/help/integrations/apollo.md): Connect Apollo to your Zite app to search B2B people and companies, enrich contact data, and sync records to your Apollo CRM.
+- [Build an app that collects data with Fillout](https://zite.com/help/integrations/fillout.md): Add published Fillout forms to your Zite app to collect responses, files, and bookings.
+- [Integrate with Typeform](https://zite.com/help/integrations/typeform.md): Connect Typeform to your Zite app to read forms and their responses. This connection is read-only.
+- [Integrate with Calendly](https://zite.com/help/integrations/calendly.md): Connect Calendly to your Zite app to read event types, bookings, and invitees, create scheduling links, and cancel bookings.
+- [Build apps that manage files with Dropbox](https://zite.com/help/integrations/dropbox.md): Let users browse, search, and upload Dropbox files from your Zite app.
+- [Integrate with Amazon S3](https://zite.com/help/integrations/amazon-s3.md): Connect Amazon S3 to your Zite app to upload files, share secure download links, and manage files in your bucket.
+- [Integrate with GitHub](https://zite.com/help/integrations/github.md): Create development tools and repository management apps on Zite with GitHub.
+- [Integrate with Granola](https://zite.com/help/integrations/granola.md): Connect Granola to your Zite app to list recent meetings, open summaries and notes, and read transcripts.
+- [Integrate with Notion](https://zite.com/help/integrations/notion.md): Connect Notion to your Zite app to show pages, work with databases, and add or update entries.
+- [Integrate with Snowflake](https://zite.com/help/integrations/snowflake.md): Connect Snowflake to your Zite app to look up warehouse data, show metrics, and update rows when you allow writes.
+- [Integrate with Linear](https://zite.com/help/integrations/linear.md): Connect Linear to your Zite app to create issues, show issues by team, and update their status and assignee.
+- [Integrate with Jira](https://zite.com/help/integrations/jira.md): Connect Atlassian's Jira Cloud to your Zite app to find issues, create tickets, and update their status.
+- [Integrate with Asana](https://zite.com/help/integrations/asana.md): Connect Asana to your Zite app to read and update projects and tasks, create tasks, and mark them complete.
+- [Integrate with Monday.com](https://zite.com/help/integrations/monday.md): Connect Monday.com to your Zite app to update your Monday board in real time, or turn your board into a client-facing app, custom portal, and more.
+- [Integrate with Trello](https://zite.com/help/integrations/trello.md): Connect Trello to your Zite app to read and update boards, lists, and cards, and share custom views with people who don't need a Trello seat.
+- [Integrate with Facebook Pages](https://zite.com/help/integrations/facebook-pages.md): Connect Facebook Pages to your Zite app to post updates, reply to comments, and display data from Pages you manage.
+- [Integrate with LinkedIn](https://zite.com/help/integrations/linkedin.md): Connect LinkedIn to your Zite app to publish posts to your feed, read your profile, and delete posts.
+- [Integrate with OpenAI](https://zite.com/help/integrations/openai.md): Connect OpenAI to your Zite app to generate text, organize information, create images, and transcribe audio.
+- [Integrate with Anthropic](https://zite.com/help/integrations/anthropic.md): Connect Anthropic's Claude to your Zite app to draft, summarize, and analyze text.
+- [Integrate with Google Gemini](https://zite.com/help/integrations/gemini.md): Connect Google Gemini to your Zite app to generate text, hold conversations, and understand images.
+- [Integrate with ElevenLabs](https://zite.com/help/integrations/elevenlabs.md): Connect your own ElevenLabs API key to generate speech, transcribe audio, and list voices and models in your Zite app.
+- [Manage and query Zite databases with ChatGPT](https://zite.com/help/integrations/query-with-chatgpt.md): Find, summarize, and update Zite database records from a ChatGPT conversation.
+- [Scrape and crawl web pages with Firecrawl](https://zite.com/help/integrations/firecrawl.md): Extract clean data from websites and convert web pages to markdown in your Zite app.
+- [Integrate with Stripe](https://zite.com/help/integrations/stripe.md): Connect Stripe to accept payments, sell subscriptions, and view customer payment information.
+- [One-off payments with Stripe](https://zite.com/help/integrations/stripe-one-off-payments.md): Collect a single payment for products, services, tickets, or bookings in your Zite app.
+- [Subscriptions with Stripe](https://zite.com/help/integrations/stripe-subscriptions.md): Sell recurring plans and keep membership access up to date with Stripe.
+- [Stripe webhooks](https://zite.com/help/integrations/stripe-webhooks.md): Keep payment and subscription records updated when something changes in Stripe.
+- [Integrate with QuickBooks](https://zite.com/help/integrations/quickbooks.md): Connect QuickBooks Online to your Zite app to work with customers, vendors, invoices, bills, and payments.
+- [Integrate with Xero](https://zite.com/help/integrations/xero.md): Connect your own Xero OAuth app to your Zite app to work with contacts, invoices, payments, bank transactions, and accounting reports.
+- [Integrate with Slack](https://zite.com/help/integrations/slack.md): Connect Slack to your Zite app to post messages to channels, send direct messages, and share updates with your team.
+- [Create apps that notify with email](https://zite.com/help/integrations/notify-with-email.md): Send confirmations, reminders, and other emails when people use your Zite app.
+- [Integrate with Twilio](https://zite.com/help/integrations/twilio.md): Connect Twilio to your Zite app to send text messages, send WhatsApp messages, and make phone calls.
+- [Integrate with Mailchimp](https://zite.com/help/integrations/mailchimp.md): Connect Mailchimp to your Zite app to add and update audience contacts, organize them with tags, and create email campaigns.
+- [Integrate with Resend](https://zite.com/help/integrations/resend.md): Connect Resend to your Zite app to send emails from your own domain, with attachments, scheduling, and delivery tracking.
+- [Integrate with Brevo](https://zite.com/help/integrations/brevo.md): Send transactional email and SMS, and manage contacts from your Zite app with your own Brevo API key.
+- [Track product analytics with Amplitude](https://zite.com/help/integrations/amplitude.md): Instrument your Zite app with Amplitude to track user behavior, custom events, and query analytics data.
+- [Integrate with ClickHouse](https://zite.com/help/integrations/clickhouse.md): Connect ClickHouse to your Zite app to search large datasets and build dashboards, charts, and reports.
+- [Integrate with Attio](https://zite.com/help/integrations/attio.md): Connect Attio to your Zite app to read and write CRM records in the connected workspace.
+- [Build an app with HubSpot](https://zite.com/help/integrations/hubspot.md): Create custom views and tools for your HubSpot contacts, companies, and deals.
+- [Integrate with Salesforce](https://zite.com/help/integrations/salesforce.md): Connect Salesforce to your Zite app to look up CRM records, create and update them, and build custom views.
+- [Build an app with Intercom](https://zite.com/help/integrations/intercom.md): Build support tools that work with Intercom contacts, conversations, and tickets.
+- [Product Updates](https://zite.com/help/whats-new.md): The latest features and product improvements in Zite
+- [Deployment region](https://zite.com/help/deployment-region.md): Select where your form submission data is stored and processed, such as switching to EU hosting.
+- [Encrypted forms](https://zite.com/help/encrypted-forms.md): Fillout follows industry best practices to keep responses secure.
+- [Fillout and GDPR-Compliant Forms](https://zite.com/help/gdpr.md): Fillout complies with the GDPR framework. Here’s what you need to know about keeping form data private and data processing.
+- [SAML Single Sign On](https://zite.com/help/saml-sso.md): Enable Single Sign-On (SSO) through various providers like Okta, Azure AD, and all SAML providers in Fillout to streamline user authentication and access management.
+- [Arcade](https://zite.com/help/snippets/Arcade.md)
+
+
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

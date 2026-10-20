@@ -1,0 +1,103 @@
+# Zite Platform
+
+- [Introduction](https://developers.zite.com/introduction.md): Zite is the agent-native app platform. Build apps and workflows on a unified database, with your favorite agent.
+- [Quickstart](https://developers.zite.com/quickstart.md): Build and publish your first Zite app with your favorite AI agent.
+- [Use the APIs](https://developers.zite.com/quickstart-api.md): Zite has two REST APIs: the Database API for reading and writing your data, and the Build API for creating and deploying apps.
+- [Workspaces](https://developers.zite.com/concepts/workspaces.md): A workspace is one database plus the apps and workflows built on it.
+- [Databases](https://developers.zite.com/concepts/databases.md): Every workspace is backed by one Zite database: tables, fields, records, and views that all its apps share.
+- [Apps](https://developers.zite.com/concepts/apps.md): Apps are React applications built on a workspace's database. A workspace can have many, all sharing the same data, auth, and design system.
+- [Workflows](https://developers.zite.com/concepts/workflows.md): Workflows are an app's backend: typed server-side logic triggered by the app, a schedule, or a webhook.
+- [Authentication](https://developers.zite.com/concepts/authentication.md): Internal apps sign in your team automatically; external apps add public sign-in. User sync links a signed-in user to a row in your database.
+- [Integrations & secrets](https://developers.zite.com/concepts/integrations-secrets.md): How Zite apps talk to third-party services, and where their credentials live.
+- [Build with agents](https://developers.zite.com/mcp/overview.md): The Zite MCP lets an AI agent build and edit Zite apps in a cloud sandbox, using your own model, with no Zite AI credits.
+- [Connect the Zite MCP](https://developers.zite.com/mcp/connect.md): Add the Zite MCP server to Claude, Claude Code, Cursor, VS Code, Codex, Windsurf, Zed, or any MCP client and authorize it with OAuth.
+- [The build loop](https://developers.zite.com/mcp/build-loop.md): How an agent goes from an empty sandbox to a published app: sandboxes, editing, checking, committing, and verifying.
+- [Build tools](https://developers.zite.com/mcp/build-tools.md): Reference for the 17 Zite MCP build tools: creating workspaces and apps, editing code in a sandbox, checking, committing, and publishing.
+- [For AI agents](https://developers.zite.com/ai-skill.md): How agents get the context they need to build Zite apps well: the framework guide, llms.txt, and tips for great results.
+- [Zite.js](https://developers.zite.com/framework/overview.md): The framework every Zite app is built on: a typed database client, backend workflows, auth, schedules, and webhooks over one workspace database.
+- [Project structure](https://developers.zite.com/framework/project-structure.md): How a Zite workspace is laid out: the monorepo, generated .zite/ files, config files, and the import conventions.
+- [Title, favicon, and link previews](https://developers.zite.com/framework/branding-seo.md): Set an app's browser tab title, favicon, and the title, description, and image shown when its link is shared, with seoSettings in the app's zite.config.json.
+- [Context](https://developers.zite.com/framework/context.md): Documents you write for the agent: data model notes, policies, specs, and brand guidelines, stored in context/ at the workspace root.
+- [Database client](https://developers.zite.com/framework/database-client.md): The typed zitejs/db client: findAll, findOne, create, update, delete, bulkCreate, and read-only SQL with zite.sql().
+- [Workflows](https://developers.zite.com/framework/workflows.md): createEndpoint from zitejs/backend: typed input/output, authentication, errors, streaming, and calling workflows from the frontend.
+- [Schedules](https://developers.zite.com/framework/schedules.md): Run workflows on a recurring cadence or once at a future time, inline on createEndpoint, or at runtime with ZiteSchedules.
+- [Webhooks](https://developers.zite.com/framework/webhooks.md): Receive inbound webhooks from external services by adding a webhook trigger to a workflow.
+- [Auth](https://developers.zite.com/framework/auth.md): useAuth on the frontend and context.user in workflows: reading the signed-in user, signing in, and signing out.
+- [Utilities](https://developers.zite.com/framework/utilities.md): Small zitejs helpers: in-app notifications, PDF generation, and file uploads.
+- [Build a CRM](https://developers.zite.com/tutorials/crm.md): A complete walk-through: a sales-pipeline CRM with a database, backend workflows, a pipeline board, a KPI row, and publishing.
+- [Build an inventory tracker](https://developers.zite.com/tutorials/inventory.md): A complete walk-through: a stock-management app with a database, backend workflows, a product list with an adjust dialog, camera scan-to-find, low-stock alerts, and publishing.
+- [Cookbook](https://developers.zite.com/recipes/overview.md): Task-oriented recipes for common things you'll build on Zite: copy-paste-ready code you or an agent can drop straight into an app.
+- [Dashboards & reports](https://developers.zite.com/recipes/dashboards-sql.md): Compute counts, sums, group-bys, and joins efficiently with zite.sql() instead of pulling rows into JavaScript.
+- [Scheduled jobs](https://developers.zite.com/recipes/scheduled-jobs.md): Run a workflow on a cadence (nightly digests, reminders, cache rebuilds) with an inline schedule, or let end users set their own.
+- [React to inbound webhooks](https://developers.zite.com/recipes/inbound-webhooks.md): Run a workflow whenever an external service (Stripe, GitHub, Airtable…) POSTs to it: add a webhook trigger and handle the payload.
+- [Stripe payments & subscriptions](https://developers.zite.com/recipes/stripe-payments.md): Accept one-time payments and subscriptions with Stripe's embedded PaymentElement. A backend workflow mints a client secret, the frontend confirms.
+- [Generate PDFs](https://developers.zite.com/recipes/generate-pdfs.md): Render an HTML document to a hosted PDF (invoices, receipts, reports) from a backend workflow with ZitePdf.renderHtml.
+- [Drag-and-drop Kanban board](https://developers.zite.com/recipes/kanban-board.md): A multi-column board with @dnd-kit, including the three defaults you must override for cross-column drops to land correctly.
+- [Rich text editor](https://developers.zite.com/recipes/rich-text.md): Let users write and read formatted text with the built-in MarkdownEditor and Markdown components.
+- [Barcode & QR scanning](https://developers.zite.com/recipes/barcode-scanning.md): A camera-based barcode/QR scanner with react-webcam and the barcode-detector polyfill, tuned for reliable real-world scans.
+- [Maps & address picker](https://developers.zite.com/recipes/maps.md): Render a Google Map, drop markers, and geocode addresses with the googlemaps integration. The API key is injected for you.
+- [AI image generation](https://developers.zite.com/recipes/image-generation.md): Generate photos and illustrations for an app's UI and drop them into JSX as editable images.
+- [Import spreadsheets](https://developers.zite.com/recipes/import-spreadsheets.md): Read and analyze .xlsx/.csv/.tsv files with pandas, then load the rows into your database with bulkCreate.
+- [Make your app installable (PWA)](https://developers.zite.com/recipes/pwa.md): Detect standalone mode and show a dismissible install prompt, after enabling PWA in the app's Branding settings.
+- [Publishing](https://developers.zite.com/deploy/publishing.md): How Zite apps go live: publishing, versions and rollback, custom domains, and audit logs.
+- [Troubleshooting](https://developers.zite.com/troubleshooting.md): Common failure modes when building and running Zite apps, and how to fix them, for developers and agents.
+- [Platform limits](https://developers.zite.com/limits.md): Result-set caps, execution timeouts, payload sizes, rate limits, and retention windows to design around.
+- [Zite Database REST API](https://developers.zite.com/api/overview.md): Read and manage your Zite databases, tables, and records over a REST API.
+- [JavaScript SDK](https://developers.zite.com/api/sdk.md): The official zitejs client for calling the Zite Database API from your own Node.js or TypeScript code.
+- [Zite Database Field Types](https://developers.zite.com/api/field-types.md): Complete reference for all available field types and their configurations.
+- [File Uploads](https://developers.zite.com/api/uploads.md): Upload attachments and import CSV/Excel files via multipart/form-data.
+- [Create Record](https://developers.zite.com/api/records/create-record.md): Creates a new record in a table using either table ID or table name.
+- [Get Record by ID](https://developers.zite.com/api/records/get-record-by-id.md): Retrieves a specific record by UUID using either table ID or table name.
+- [Update Record](https://developers.zite.com/api/records/update-record.md): Updates an existing record's field values using either table ID or table name.
+- [List Records](https://developers.zite.com/api/records/list-records.md): Retrieves records from a table with filtering, sorting, and pagination using either table ID or table name.
+- [Bulk Create Records](https://developers.zite.com/api/records/bulk-create-records.md): Create or upsert up to 100 records in a single request using either table ID or table name.
+- [Bulk Update Records](https://developers.zite.com/api/records/bulk-update-records.md): Update up to 100 existing records in a single request using either table ID or table name.
+- [Aggregate Records](https://developers.zite.com/api/records/aggregate-records.md): Compute a sum, average, min, max, or count over a field, optionally filtered and grouped.
+- [Delete Record](https://developers.zite.com/api/records/delete-record.md): Permanently removes a record from a table using either table ID or table name.
+- [Bulk Delete Records](https://developers.zite.com/api/records/bulk-delete-records.md): Permanently delete up to 100 records in a single request using either table ID or table name.
+- [Run SQL](https://developers.zite.com/api/sql/run-sql.md): Execute a read-only SQL query against a database and its linked tables.
+- [Get SQL Schema](https://developers.zite.com/api/sql/get-schema.md): Describe a database's tables, fields, and link tables for composing SQL queries.
+- [List Fields](https://developers.zite.com/api/fields/list-fields.md): Retrieve all fields for a table using either table ID or table name.
+- [Create Field](https://developers.zite.com/api/fields/create-field.md): Adds a new field to an existing table using either table ID or table name.
+- [Update Field](https://developers.zite.com/api/fields/update-field.md): Updates field properties and configuration using either field ID or field name.
+- [Delete Field](https://developers.zite.com/api/fields/delete-field.md): Permanently removes a field from a table.
+- [Create Table](https://developers.zite.com/api/tables/create-table.md): Adds a new table to an existing database.
+- [Update Table](https://developers.zite.com/api/tables/update-table.md): Updates table properties like name and order using either table ID or table name.
+- [Delete Table](https://developers.zite.com/api/tables/delete-table.md): Permanently deletes a table and all its records using either table ID or table name.
+- [Create Database](https://developers.zite.com/api/databases/create-database.md): Creates a new database with tables and fields.
+- [Get Databases](https://developers.zite.com/api/databases/get-databases.md): Lists all databases for your organization.
+- [Get Database by ID](https://developers.zite.com/api/databases/get-database-by-id.md): Retrieves a specific database by ID with complete table definitions.
+- [Delete Database](https://developers.zite.com/api/databases/delete-database.md): Permanently deletes a database and all its data.
+- [Webhooks overview](https://developers.zite.com/api/webhooks/webhooks.md): Receive real-time notifications when database events occur
+- [Create Webhook](https://developers.zite.com/api/webhooks/create-webhook.md): Creates a new webhook subscription to receive notifications when database events occur.
+- [List Webhooks](https://developers.zite.com/api/webhooks/list-webhooks.md): Lists all webhook subscriptions for a database.
+- [Delete Webhook](https://developers.zite.com/api/webhooks/delete-webhook.md): Permanently removes a webhook subscription.
+- [Overview](https://developers.zite.com/api/mcp/overview.md): Connect an AI tool to Zite via MCP to read, write, and query your data in natural language.
+- [Supported MCP Tools](https://developers.zite.com/api/mcp/tools.md): What you can do with our MCP service
+- [Build API](https://developers.zite.com/build-api/overview.md): Create, build, and deploy Zite apps programmatically, from your own code, CI, or your own agent. The REST equivalent of the Zite MCP build tools.
+- [Create Zite via API](https://developers.zite.com/build-api/create-zite.md): Programmatically create Zites from a prompt using the REST API.
+- [Create a workspace](https://developers.zite.com/build-api/workspaces/create-workspace.md): Create a new workspace: a database plus the apps built on it.
+- [List workspaces](https://developers.zite.com/build-api/workspaces/list-workspaces.md): List every workspace your key can access, each with its apps and forms.
+- [Get a workspace](https://developers.zite.com/build-api/workspaces/get-workspace.md): Return one workspace with its apps and forms.
+- [List apps in a workspace](https://developers.zite.com/build-api/workspaces/list-apps.md): List the apps in a workspace.
+- [Get an app](https://developers.zite.com/build-api/workspaces/get-app.md): Return one app, including its build status and editor URL.
+- [Open a session](https://developers.zite.com/build-api/sessions/open-session.md): Open an isolated checkout of a workspace's monorepo to create apps and edit files.
+- [Create an app](https://developers.zite.com/build-api/sessions/create-app.md): Scaffold an empty app inside a build session.
+- [List files](https://developers.zite.com/build-api/sessions/list-files.md): List or glob files in a build session.
+- [Search files](https://developers.zite.com/build-api/sessions/search-files.md): Search file contents in a build session with a regular expression.
+- [Read a file](https://developers.zite.com/build-api/sessions/read-file.md): Read a file in a build session, with optional paging for long files.
+- [Write a file](https://developers.zite.com/build-api/sessions/write-file.md): Create a new file or fully rewrite an existing one in a build session.
+- [Edit a file](https://developers.zite.com/build-api/sessions/edit-file.md): Replace an exact snippet in an existing file.
+- [Run a command](https://developers.zite.com/build-api/sessions/run-command.md): Run a shell command inside a build session checkout.
+- [Check](https://developers.zite.com/build-api/sessions/check.md): Regenerate types and run the type-check and config validation.
+- [Commit](https://developers.zite.com/build-api/sessions/commit.md): Commit and push session changes, then build and snapshot in the background.
+- [Publish a deployment](https://developers.zite.com/build-api/deployments/publish-deployment.md): Publish an app's latest successful build to make it live.
+- [Read logs](https://developers.zite.com/build-api/deployments/read-logs.md): Read workflow execution logs: inputs, outputs, console output, and stack traces.
+
+## OpenAPI Specs
+
+- [openapi](/api/openapi.json)
+- [openapi](/build-api/openapi.json)
+
+
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

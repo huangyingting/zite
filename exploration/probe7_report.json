@@ -1,0 +1,62 @@
+[
+  {
+    "label": "37_demo_crm_leads",
+    "url": "https://zite-demo-rnc1vjxbjr.zite.so/#/leads",
+    "text": "AS\nAshgrove Software\nHome\nLeads\n9\nDeals\nCompanies\nContacts\nTasks\nOutreach\nReports\nSearch\nCtrl\nK\nNew\nDO"
+  },
+  {
+    "label": "38_demo_crm_deals",
+    "url": "https://zite-demo-rnc1vjxbjr.zite.so/#/deals",
+    "text": "AS\nAshgrove Software\nHome\nLeads\n9\nDeals\nCompanies\nContacts\nTasks\nOutreach\nReports\nSearch\nCtrl\nK\nNew\nDO\nNew business ▾\nDeals\n\nEverything in flight, and what happens next on each one.\n\nViews\nNew deal\nOPEN PIPELINE\n$0\n0 open deals\nWEIGHTED\n$0\nBy stage probability\nSTALLED\n0\nPast the stage limit\nNO NEXT STEP\n0\nNothing scheduled\nCLOSE DATE PASSED\n0\nNeeds a new date\nFilter\nBoard order\n0 deals\nStatus: Open\nClear all"
+  },
+  {
+    "label": "39_demo_crm_companies",
+    "url": "https://zite-demo-rnc1vjxbjr.zite.so/#/companies",
+    "text": "AS\nAshgrove Software\nHome\nLeads\n9\nDeals\nCompanies\nContacts\nTasks\nOutreach\nReports\nSearch\nCtrl\nK\nNew\nDO\nCompanies\n\nEveryone you sell to, and what is open with each of them.\n\nNew company\nCOMPANIES\n0\n0 people\nOPEN PIPELINE\n$0\nAcross every open deal\nWON REVENUE\n$0\nClosed won, all time\nCUSTOMERS\n0\nType is Customer\nNO OPEN DEAL\n0\nNothing in flight\nFilter\nOpen pipeline\n0 companies"
+  },
+  {
+    "label": "40_demo_crm_contacts",
+    "url": "https://zite-demo-rnc1vjxbjr.zite.so/#/contacts",
+    "text": "AS\nAshgrove Software\nHome\nLeads\n9\nDeals\nCompanies\nContacts\nTasks\nOutreach\nReports\nSearch\nCtrl\nK\nNew\nDO\nContacts\n\nEveryone you know at the companies you sell to.\n\nNew contact\nCONTACTS\n0\n0 attached to a company\nOPEN PIPELINE\n$0\nDeals they are on\nREACHABLE\n0\nHas an email and has not opted out\nNO COMPANY\n0\nNobody to hang them off\nQUIET 60 DAYS\n0\nNothing logged\nFilter\nLast activity\n0 contacts"
+  },
+  {
+    "label": "41_demo_crm_tasks",
+    "url": "https://zite-demo-rnc1vjxbjr.zite.so/#/tasks",
+    "text": "AS\nAshgrove Software\nHome\nLeads\n9\nDeals\nCompanies\nContacts\nTasks\nOutreach\nReports\nSearch\nCtrl\nK\nNew\nDO\nTasks\nMy tasks\n\nEverything you owe someone, in the order it comes due.\n\nNew task\nToday\n0\nUpcoming\n0\nOverdue\n11\nUnscheduled\n0\nDone\n13\nTeam\n36\nMeetings\nActivity log\nFilter\nDue date\n0 tasks\nNothing due today\nYou are clear. Anything you add with today’s date lands here.\nNew task"
+  },
+  {
+    "label": "42_demo_crm_outreach",
+    "url": "https://zite-demo-rnc1vjxbjr.zite.so/#/outreach/sequences",
+    "text": "AS\nAshgrove Software\nHome\nLeads\n9\nDeals\nCompanies\nContacts\nTasks\nOutreach\nReports\nSearch\nCtrl\nK\nNew\nDO\nSequences\n\nMulti-step outreach that runs itself, and stops the moment someone replies.\n\nNew sequence\nSequences\nTemplates\nForms\nMeeting links\nRUNNING\n3\n0 paused or archived\nENROLLED NOW\n0\nPeople with a step still to come\nEVER ENROLLED\n12\nAcross every sequence\nREPLIED\n17%\n2 came off after replying\nMEETINGS\n8%\n1 booked a meeting\nFilter\n3 sequences\nSEQUENCE\n\tCADENCE\tENROLLED NOW\tREPLIED\tMEETINGS\tOWNER\t\n\nNew inbound lead\nFor someone who asked to hear from us. Fast on day one, then it backs off.\n\t\n5 steps · 8d\n\t0\t25%\t0%\t\nMB\nMarcus Bell\n\t\n\n\nOutbound prospecting\nCold, for operations leaders at multi-site distributors. Stops the moment a deal appears.\n\t\n6 steps · 16d\n\t1\t20%\t0%\t\nAK\nAisha Karim\n\t\n\n\nRenewal check-in\nStarts sixty days out. Warm, short, and it never emails at the weekend.\n\t\n4 steps · 12d\n\t1\t0%\t33%\t\nHL\nHannah Lindqvist\n\t"
+  },
+  {
+    "label": "43_demo_crm_reports",
+    "url": "https://zite-demo-rnc1vjxbjr.zite.so/#/reports",
+    "text": "AS\nAshgrove Software\nHome\nLeads\n9\nDeals\nCompanies\nContacts\nTasks\nOutreach\nReports\nSearch\nCtrl\nK\nNew\nDO\nReports\n\nHow the quarter is going — the pipeline behind it, and who is carrying it.\n\nOverview\nPipeline\nForecast\nActivity\nLeads\nTeam & quotas\nMonth\nQuarter\nYear\nQ4 2026\nAll pipelines\nEveryone\nExport CSV\n\n$1.6M open pipeline · $604.6K weighted\n\nWON · Q4 2026\n$0\n0 deals closed\nWIN RATE\n—\nNothing closed yet\nAVERAGE DEAL\n—\nNo deals won yet\nSALES CYCLE\n—\nNeeds a won deal\nAgainst quota\n\nEveryone’s targets for this period\n\nNo quota is set for Q4 2026. Set one on Team & quotas\n\nWon revenue by month\n\nThe last twelve months. This month is in the pen.\n\nNov 25\nDec 25\nJan 26\nFeb 26\nMar 26\nApr 26\nMay 26\nJun 26\nJul 26\nAug 26\nSep 26\nOct 26\n$0\n$35K\n$70K\n$105K\n$140K\nOpen pipeline by stage\n35 deals\n\nEverything open right now — not just what closes in Q4 2026.\n\nQualification · New business\n$630.9K\n14 deals · $63.1K weighted\nDiscovery · New business\n$140.6K\n4 deals · $35.1K weighted\nDemo · New business\n$290.8K\n3 deals · $116.3K weighted\nProposal · New business\n$245.4K\n5 deals · $147.3K weighted\nNegotiation · New business\n$129.8K\n3 deals · $103.9K weighted\nUpcoming · Renewals & expansion\n$31.4K\n1 deal · $15.7K weighted\nIn review · Renewals & expansion\n$176K\n5 deals · $123.2K weighted\nCommitted · Renewals & expansion\n$0\n0 deals · $0 weighted\nWon and lost\nQ4 2026\n0 won · $0\n0 lost · $0\nWHY DEALS WERE LOST\n\nNothing was lost in this period.\n\n$0"
+  },
+  {
+    "label": "46_app_home_intercepted",
+    "url": "https://app.zite.com/home",
+    "text": "Workspace not found\n\nThis workspace does not exist, or you do not have access to it. Contact your organization's admin.\n\nGo home"
+  },
+  {
+    "label": "47_app_migrate",
+    "url": "https://app.zite.com/migrate",
+    "text": "/\nNew workspace\n/\nMigrate\nFeedback?\nBring your work to Zite\n\nPick the tool you're moving from.\n\nMigrate with your AI agent\nNew\nUse Claude, ChatGPT and other agents to migrate to Zite.\nDatabases and spreadsheets\nAirtable\nGoogle Sheets\nExcel\nCSV\nApps and portals\nAirtable Interfaces\nSoftr\nGlide\nBubble\nRetool\nAppSheet\nPower Apps\nNotion\nBase44\nLovable\nReplit\nCustom app\nAutomations\nZapier\nMake\nn8n\nWork management\nSmartsheet\nMonday\nSmartSuite\nClickUp\nJira\nAsana\nTrello\nLinear\nCRMs\nSalesforce\nHubSpot\nAttio\nNot listed?\nSomething else\nShow us how it works and we'll rebuild it\n\nMoving a lot at once? Book a migration call"
+  },
+  {
+    "label": "48_app_billing_plan_builder",
+    "url": "https://app.zite.com/billing/plan-builder",
+    "text": "Oops! Something seems to be out of order.\n\nPlease try refreshing"
+  },
+  {
+    "label": "49_app_settings",
+    "url": "https://app.zite.com/home/settings",
+    "text": "Back to dashboard\nWhat's new\nHelp"
+  },
+  {
+    "label": "50_app_integrations",
+    "url": "https://app.zite.com/home/settings/integrations",
+    "text": "Back to dashboard\nWhat's new\nHelp"
+  }
+]
