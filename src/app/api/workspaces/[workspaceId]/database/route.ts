@@ -248,6 +248,23 @@ export async function POST(
     );
   }
 
+  const schemaActions = [
+    "create_table",
+    "createTable",
+    "add_field",
+    "addField",
+    "delete_record",
+    "deleteRecord",
+    "create_view",
+    "import_csv",
+  ];
+  if (schemaActions.includes(body.action) && !user) {
+    return NextResponse.json(
+      { error: "Unauthorized: Sign in required for database schema or destructive mutations" },
+      { status: 401 }
+    );
+  }
+
   if (body.action === "create_table" || body.action === "createTable") {
     const name = (body.tableName || body.name || "New Table").trim();
     const sdkName = name

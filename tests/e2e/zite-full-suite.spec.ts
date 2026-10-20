@@ -321,5 +321,37 @@ test.describe("Zite Full-Stack Platform — E2E Verification Suite", () => {
     await page.getByTestId("plan-tier-enterprise").click();
     await page.getByTestId("save-plan-btn").click();
     await expect(page.getByTestId("plan-saved-banner")).toBeVisible();
+
+    // 8. Verify Public Webhook Endpoint Execution (/api/public/[flowId]/[endpointName]) with decrypted secret injection
+    const webhookRes = await request.post(
+      "/api/public/ws_ashgrove_crm/generateQuotePdf",
+      {
+        data: { dealName: "Stripe Expansion", amount: 180000 },
+      }
+    );
+    expect(webhookRes.status()).toBe(200);
+    const webhookJson = await webhookRes.json();
+    expect(webhookJson.ok).toBe(true);
+    expect(webhookJson.workspaceRecordsQueried).toBeGreaterThan(0);
+    expect(webhookJson.secretsInjected).toContain("STRIPE_WEBHOOK_SECRET");
+
+    // 9. Verify Multi-App Published Runners (/published/talentflow-ats & /published/clienthub-portal)
+    await page.goto("/published/talentflow-ats");
+    await expect(page.locator("body")).toContainText("TalentFlow ATS");
+    await expect(page.locator("body")).toContainText("Maya Lin");
+
+    await page.goto("/published/clienthub-portal");
+    await expect(page.locator("body")).toContainText("ClientHub Billing Portal");
+    await expect(page.locator("body")).toContainText("INV-2026-1042");
+
+    // 10. Verify Password Reset & Enterprise SSO Discovery APIs
+    const resetRes = await request.post("/api/auth/reset-password", {
+      data: { action: "request", email: "editor@zite.com" },
+    });
+    expect(resetRes.status()).toBe(200);
+    const ssoRes = await request.post("/api/auth/sso", {
+      data: { domain: "ashgrovesoftware.com" },
+    });
+    expect(ssoRes.status()).toBe(200);
   });
 });

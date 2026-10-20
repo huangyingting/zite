@@ -7,6 +7,21 @@ import { ShieldCheck, CheckCircle2 } from "lucide-react";
 export default function SsoPage() {
   const [domain, setDomain] = useState("ashgrovesoftware.com");
   const [submitted, setSubmitted] = useState(false);
+  const [idpInfo, setIdpInfo] = useState<any>(null);
+
+  async function handleSsoDiscovery(e: React.FormEvent) {
+    e.preventDefault();
+    const res = await fetch("/api/auth/sso", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ domain }),
+    });
+    const data = await res.json();
+    if (res.ok) {
+      setIdpInfo(data);
+      setSubmitted(true);
+    }
+  }
 
   return (
     <div className="min-h-screen bg-[#FAF9F5] flex flex-col justify-center items-center px-4 py-12">
@@ -27,7 +42,9 @@ export default function SsoPage() {
           <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 space-y-2">
             <div className="flex items-center gap-1.5 font-semibold">
               <CheckCircle2 className="w-4 h-4 text-[#059669]" />
-              <span>IdP Discovery Verified for {domain}</span>
+              <span>
+                IdP Discovery Verified for {idpInfo?.domain || domain} ({idpInfo?.idpName || "SAML 2.0"})
+              </span>
             </div>
             <p>
               Your organization’s SAML 2.0 Identity Provider is configured. Proceed to authenticated workspace session.
@@ -40,13 +57,7 @@ export default function SsoPage() {
             </Link>
           </div>
         ) : (
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              setSubmitted(true);
-            }}
-            className="space-y-4"
-          >
+          <form onSubmit={handleSsoDiscovery} className="space-y-4">
             <div>
               <label className="block text-xs font-medium text-[#141413] mb-1">
                 Company Domain or Work Email
@@ -54,6 +65,7 @@ export default function SsoPage() {
               <input
                 type="text"
                 required
+                data-testid="sso-domain-input"
                 value={domain}
                 onChange={(e) => setDomain(e.target.value)}
                 className="w-full px-3 py-2 rounded-lg border border-[#D4D2C8] text-sm"
@@ -61,6 +73,7 @@ export default function SsoPage() {
             </div>
             <button
               type="submit"
+              data-testid="sso-submit-btn"
               className="w-full py-2.5 rounded-lg bg-[#141413] text-[#FAF9F5] text-sm font-medium"
             >
               Continue with SAML SSO

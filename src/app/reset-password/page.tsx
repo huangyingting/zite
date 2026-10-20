@@ -7,6 +7,24 @@ import { Mail, CheckCircle2 } from "lucide-react";
 export default function ResetPasswordPage() {
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/auth/reset-password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "request", email }),
+      });
+      if (res.ok) {
+        setSent(true);
+      }
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   return (
     <div className="min-h-screen bg-[#FAF9F5] flex flex-col justify-center items-center px-4 py-12">
@@ -32,13 +50,7 @@ export default function ResetPasswordPage() {
             </p>
           </div>
         ) : (
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              setSent(true);
-            }}
-            className="space-y-4"
-          >
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label className="block text-xs font-medium text-[#141413] mb-1">
                 Work Email
@@ -46,6 +58,7 @@ export default function ResetPasswordPage() {
               <input
                 type="email"
                 required
+                data-testid="reset-password-email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@company.com"
@@ -54,9 +67,11 @@ export default function ResetPasswordPage() {
             </div>
             <button
               type="submit"
-              className="w-full py-2.5 rounded-lg bg-[#141413] text-[#FAF9F5] text-sm font-medium"
+              disabled={submitting}
+              data-testid="reset-password-submit"
+              className="w-full py-2.5 rounded-lg bg-[#141413] text-[#FAF9F5] text-sm font-medium disabled:opacity-50"
             >
-              Send Reset Link
+              {submitting ? "Sending Reset Link..." : "Send Reset Link"}
             </button>
           </form>
         )}

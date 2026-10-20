@@ -196,6 +196,13 @@ export default function PublishedAppRunnerPage() {
       item.sub.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  const appDisplayName =
+    appSlug === "talentflow-ats"
+      ? "TalentFlow ATS"
+      : appSlug === "clienthub-portal"
+      ? "ClientHub Billing Portal"
+      : "Ashgrove Software";
+
   return (
     <div className="min-h-screen bg-[#FAF9F5] text-[#141413] flex">
       {/* Sidebar matching zite-demo-rnc1vjxbjr.zite.so */}
@@ -204,14 +211,16 @@ export default function PublishedAppRunnerPage() {
           <div className="flex items-center justify-between px-2">
             <div className="flex items-center gap-2.5">
               <div className="w-8 h-8 rounded-lg bg-[#141413] text-[#FAF9F5] flex items-center justify-center font-bold text-sm">
-                A
+                {appDisplayName[0]}
               </div>
               <div>
                 <div className="font-semibold text-sm leading-tight">
-                  Ashgrove Software
+                  {appDisplayName}
                 </div>
                 <div className="text-[11px] text-[#5E5D59]">
-                  zite-demo-rnc1vjxbjr.zite.so
+                  {appSlug === "ashgrove-crm"
+                    ? "zite-demo-rnc1vjxbjr.zite.so"
+                    : `${appSlug}.zite.so`}
                 </div>
               </div>
             </div>
@@ -350,7 +359,7 @@ export default function PublishedAppRunnerPage() {
                     Good morning, Dominic
                   </h1>
                   <p className="text-xs text-[#5E5D59]">
-                    Ashgrove Software Revenue OS · Real-time Zite Database telemetry
+                    {appDisplayName} · Real-time Zite Database telemetry
                   </p>
                 </div>
                 <button
@@ -361,6 +370,46 @@ export default function PublishedAppRunnerPage() {
                   + New Deal
                 </button>
               </div>
+
+              {deals.length === 0 && tables.length > 0 && (
+                <div
+                  data-testid="custom-workspace-records-panel"
+                  className="rounded-xl border border-[#E6E4DD] bg-white overflow-hidden"
+                >
+                  <div className="p-4 border-b border-[#E6E4DD] flex items-center justify-between">
+                    <span className="font-semibold text-sm">
+                      {tables[0].name} ({tables[0].records?.length || 0} live records)
+                    </span>
+                    <span className="text-xs text-[#5E5D59] font-mono">
+                      zite.{tables[0].slug}.findAll()
+                    </span>
+                  </div>
+                  <div className="divide-y divide-[#E6E4DD]">
+                    {(tables[0].records || []).map((rec: any) => (
+                      <div
+                        key={rec.id}
+                        className="p-4 flex flex-wrap items-center justify-between gap-3 text-xs"
+                      >
+                        <div className="font-semibold text-[#141413]">
+                          {rec.data.name ||
+                            rec.data.invoiceNumber ||
+                            rec.data.title ||
+                            rec.id}
+                        </div>
+                        <div className="text-[#5E5D59]">
+                          {rec.data.role ||
+                            rec.data.client ||
+                            rec.data.aiFitSummary ||
+                            JSON.stringify(rec.data)}
+                        </div>
+                        <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-medium">
+                          {rec.data.stage || rec.data.status || "Active"}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* 4 KPI Cards */}
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">

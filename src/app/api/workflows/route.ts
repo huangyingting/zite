@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { recordAuditLog } from "@/lib/audit";
+import { decryptWorkspaceSecret } from "@/lib/secrets";
 
 export async function POST(request: Request) {
   const user = await getCurrentUser();
@@ -30,6 +31,15 @@ export async function POST(request: Request) {
     runId?: string;
     generatePdf?: boolean;
   };
+
+  if (body.action === "create" || body.action === "update_code") {
+    if (!user) {
+      return NextResponse.json(
+        { error: "Unauthorized: Sign in required to create or edit workflow code" },
+        { status: 401 }
+      );
+    }
+  }
 
   if (body.action === "create") {
     const ws =
@@ -118,6 +128,31 @@ export async function POST(request: Request) {
     }
   }
 
+  const [workspaceTables, workspaceIntegrations] = await Promise.all([
+    prisma.databaseTable.findMany({
+      where: { workspaceId: workflow.workspaceId },
+      include: { _count: { select: { records: true } } },
+    }),
+    prisma.workspaceIntegration.findMany({
+      where: { workspaceId: workflow.workspaceId },
+    }),
+  ]);
+
+  const decryptedSecretNames: string[] = [];
+  for (const integ of workspaceIntegrations) {
+    if (integ.providerId.startsWith("secret:") && integ.secretMasked) {
+      const dec = decryptWorkspaceSecret(integ.secretMasked);
+      if (dec) {
+        decryptedSecretNames.push(integ.name);
+      }
+    }
+  }
+
+  const totalDbRecords = workspaceTables.reduce(
+    (sum, t) => sum + t._count.records,
+    0
+  );
+
   const steps = JSON.parse(workflow.stepsJson || "[]") as Array<{
     title: string;
     detail?: string;
@@ -126,7 +161,12 @@ export async function POST(request: Request) {
     step: s.title,
     status: "SUCCESS",
     durationMs: 25 + idx * 34,
-    output: s.detail || "Completed step",
+    output:
+      idx === 1
+        ? `Queried ${workspaceTables.length} workspace tables (${totalDbRecords} live rows) · context.secrets: [${decryptedSecretNames.join(
+            ", "
+          ) || "default"}]`
+        : s.detail || "Completed step",
   }));
 
   const isPdfWorkflow =
@@ -149,6 +189,7 @@ export async function POST(request: Request) {
     <p><strong>Contract Value:</strong> $${Number(
       inputPayload.amount || 245400
     ).toLocaleString()}</p>
+    <p><strong>Workspace DB Context:</strong> ${workspaceTables.length} tables · ${totalDbRecords} records</p>
     <p><strong>Status:</strong> Approved & Signed Ready</p>
   </div>
 </div>`
@@ -167,6 +208,9 @@ export async function POST(request: Request) {
         workflow: workflow.filename,
         executedAt: new Date().toISOString(),
         pdfGenerated: Boolean(pdfArtifactHtml),
+        workspaceTablesQueried: workspaceTables.length,
+        workspaceRecordsCount: totalDbRecords,
+        injectedSecretKeys: decryptedSecretNames,
       }),
       stepsLogJson: JSON.stringify(stepsLog),
       pdfArtifactHtml,

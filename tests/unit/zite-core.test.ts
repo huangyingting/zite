@@ -17,6 +17,12 @@ import {
 } from "@/lib/ai/provider";
 import { ZITE_FIELD_TYPES, ZITE_TEMPLATES } from "@/lib/zite-catalog";
 import { recordAuditLog } from "@/lib/audit";
+import {
+  encryptWorkspaceSecret,
+  decryptWorkspaceSecret,
+  getMaskedSecretPreview,
+  ZiteError,
+} from "@/lib/secrets";
 
 describe("Zite Account Admission & Crypto Primitives", () => {
   it("generates single-use invitation tokens with zite_inv_ prefix and deterministic SHA-256 hash", () => {
@@ -96,5 +102,18 @@ describe("Zite Database Field Catalog & Security Audit Event Taxonomy", () => {
     });
     expect(log?.securityCritical).toBe(true);
     expect(log?.category).toBe("user");
+  });
+
+  it("encrypts and decrypts workspace secrets with AES-256-GCM and enforces ZiteError status codes", () => {
+    const rawSecret = "whsec_live_super_secret_stripe_key_2026";
+    const { storedValue, maskedPreview } = encryptWorkspaceSecret(rawSecret);
+    expect(storedValue.startsWith("enc:v1:")).toBe(true);
+    expect(storedValue).not.toContain(rawSecret);
+    expect(getMaskedSecretPreview(storedValue)).toBe(maskedPreview);
+    expect(decryptWorkspaceSecret(storedValue)).toBe(rawSecret);
+
+    const err = new ZiteError("RATE_LIMITED", "Too many workflow calls");
+    expect(err.statusCode).toBe(429);
+    expect(err.code).toBe("RATE_LIMITED");
   });
 });

@@ -12,4 +12,4 @@ EXPOSE 3010
 ENV PORT=3010
 ENV NODE_ENV=production
 
-CMD ["sh", "-c", "npx prisma migrate deploy --schema prisma/schema.postgres.prisma && npm run start"]
+CMD ["sh", "-c", "npx prisma db push --schema prisma/schema.postgres.prisma && npm run start"]

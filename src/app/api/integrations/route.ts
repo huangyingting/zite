@@ -2,6 +2,10 @@ import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { recordAuditLog } from "@/lib/audit";
+import {
+  encryptWorkspaceSecret,
+  getMaskedSecretPreview,
+} from "@/lib/secrets";
 
 export async function GET() {
   const integrations = await prisma.workspaceIntegration.findMany({
@@ -12,6 +16,7 @@ export async function GET() {
     .filter((i) => i.category !== "Secret" && !i.providerId.startsWith("secret:"))
     .map((i) => ({
       ...i,
+      secretMasked: getMaskedSecretPreview(i.secretMasked),
       providerSlug: i.providerId,
     }));
 
@@ -20,11 +25,19 @@ export async function GET() {
     .map((i) => ({
       id: i.id,
       name: i.providerId.startsWith("secret:") ? i.name : `${i.providerId.toUpperCase().replace(/[^A-Z0-9]/g, "_")}_SECRET`,
-      maskedPreview: i.secretMasked || "zite_sec_••••••••••••",
+      maskedPreview: getMaskedSecretPreview(i.secretMasked),
+      encryptedAtRest: Boolean(i.secretMasked?.startsWith("enc:v1:")),
       updatedAt: i.updatedAt,
     }));
 
-  return NextResponse.json({ integrations, connections, secrets });
+  return NextResponse.json({
+    integrations: integrations.map((i) => ({
+      ...i,
+      secretMasked: getMaskedSecretPreview(i.secretMasked),
+    })),
+    connections,
+    secrets,
+  });
 }
 
 export async function POST(request: Request) {
@@ -65,7 +78,7 @@ export async function POST(request: Request) {
   if (body.action === "upsertSecret" && body.name) {
     const cleanName = body.name.trim().toUpperCase().replace(/[^A-Z0-9_]/g, "_");
     const rawVal = body.value || body.secretValue || "sec_val";
-    const masked = `${rawVal.slice(0, 4)}••••••••••••`;
+    const { storedValue, maskedPreview } = encryptWorkspaceSecret(rawVal);
     const providerKey = `secret:${cleanName}`;
 
     const existingSecret = await prisma.workspaceIntegration.findFirst({
@@ -75,7 +88,7 @@ export async function POST(request: Request) {
     const saved = existingSecret
       ? await prisma.workspaceIntegration.update({
           where: { id: existingSecret.id },
-          data: { name: cleanName, secretMasked: masked, status: "CONNECTED" },
+          data: { name: cleanName, secretMasked: storedValue, status: "CONNECTED" },
         })
       : await prisma.workspaceIntegration.create({
           data: {
@@ -84,7 +97,7 @@ export async function POST(request: Request) {
             name: cleanName,
             category: "Secret",
             status: "CONNECTED",
-            secretMasked: masked,
+            secretMasked: storedValue,
           },
         });
 
@@ -97,7 +110,11 @@ export async function POST(request: Request) {
       targetType: "secret",
       targetId: saved.id,
       targetName: cleanName,
-      payload: { workspaceId: ws.publicId, secretName: cleanName },
+      payload: {
+        workspaceId: ws.publicId,
+        secretName: cleanName,
+        cipher: "AES-256-GCM",
+      },
     });
 
     return NextResponse.json(
@@ -105,9 +122,10 @@ export async function POST(request: Request) {
         secret: {
           id: saved.id,
           name: saved.name,
-          maskedPreview: saved.secretMasked || masked,
+          maskedPreview,
+          encryptedAtRest: true,
         },
-        integration: saved,
+        integration: { ...saved, secretMasked: maskedPreview },
       },
       { status: 201 }
     );
